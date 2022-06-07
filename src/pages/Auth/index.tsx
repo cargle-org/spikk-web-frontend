@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router'
-const  Login = React.lazy(() => require( './Login'))
+const  Login = React.lazy(() => import( './Login'))
 
 const AuthRoutes = () => {
   return (

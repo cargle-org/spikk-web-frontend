@@ -15,17 +15,17 @@ const breakpoints = createBreakpoints({
 
 export const theme = extendTheme({
   styles: {
-    global: () => ({
-        'html, body': {
-            fontFamily: 'Rubik, sans-serif',
-            fontWeight: 400
-          },
-    }),
+    // global: () => ({
+    //     'html, body': {
+    //         fontFamily: 'sans-serif',
+    //         fontWeight: 400
+    //       },
+    // }),
   },
   breakpoints,
   fonts: {
-    heading: '"Rubik", sans-serif',
-    body: '"Rubik", sans-serif'
+    heading: '"Gilroy", sans-serif',
+    body: '"Gilroy", sans-serif'
   },
   colors: {
     "moneypoint-light-blue": "#F5F9FF",
