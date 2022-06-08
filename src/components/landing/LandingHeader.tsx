@@ -20,17 +20,6 @@ const LandingHeader = () => {
         <Box pr={100} pt={2}>
           <Button bg='#FBA819' color='#0D0D26'>Join</Button>
         </Box>
-        {/* <div style={{color:'white'}}>
-            <div>Home</div>
-          </div>
-          <div style={{color:'white'}}>
-            <div>About</div>
-          </div>
-        <Box bg='#0D0D26'>
-          <Box>
-            <Button bg='#FBA819' color='#0D0D26'>Join</Button>
-          </Box>
-        </Box> */}
       </Flex>
       
     </div>
