@@ -9,7 +9,6 @@ const LandingHeader = () => {
         <Box>
           <Image p={6} src={spikklogo} alt='Spikk Logo' />
         </Box>
-        
         <Spacer />
         <Box p='4' style={{color:'white'}}>
           Home
