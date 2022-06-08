@@ -7,6 +7,8 @@ import userImage2 from './femaleuserimage2.png';
 import progress from './progress.png';
 import bike from './bike.png';
 import fadedrectangle from './fadedrectangle.png';
+import { AiOutlineShoppingCart } from 'react-icons/ai';
+import { VscGift, VscChevronDown } from 'react-icons/vsc';
 
 const Hompage = () => {
   return (
@@ -33,13 +35,10 @@ const Hompage = () => {
             </HStack>
             <HStack>
               <Button colorScheme='yellow' variant='outline'   borderRadius='20px'>
-                BUY ANYTHING
+                <AiOutlineShoppingCart/> &nbsp;  BUY ANYTHING
               </Button>
-              {/* <Button leftIcon={<EmailIcon />} colorScheme='yellow' variant='outline'>
-                BUY ANYTHING
-              </Button> */}
               <Button colorScheme='yellow' variant='outline'   borderRadius='20px'>
-                SEND ANYTHING
+                <VscGift/> &nbsp; SEND ANYTHING
               </Button>
             </HStack>
             <HStack>

@@ -1,6 +1,8 @@
 import React from 'react'
 import { Image, Box, Button, Spacer, Flex } from '@chakra-ui/react'
 import spikklogo from "./spikklogo.png";
+import { VscGift, VscChevronDown } from 'react-icons/vsc';
+
 const LandingHeader = () => {
   return (
     
@@ -17,7 +19,7 @@ const LandingHeader = () => {
           About
         </Box>
         <Box pr={100} pt={2}>
-          <Button bg='#FBA819' color='#0D0D26'>Join</Button>
+          <Button bg='#FBA819' color='#0D0D26'> Join &nbsp; <VscChevronDown/></Button>
         </Box>
       </Flex>
       
