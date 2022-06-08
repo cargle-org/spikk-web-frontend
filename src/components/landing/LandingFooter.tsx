@@ -8,15 +8,18 @@ const LandingFooter = () => {
       <Container maxW='container.x1' bg='#0D0D26'>
         <Flex h='50vh' py={20}>
           <VStack w='full' h='full'>
-            <Box>
+            {/* <Box> */}
               <Image p={6} src={spikklogo} alt='Spikk Logo' />
-            </Box>
+            {/* </Box> */}
             <Text fontSize='1xl' style={{color:'white'}}>
-              Spikk has got you covered. Spikk saves you time and energy so you can relax and have us run that errand or pick up and deliver.
+              © 2022 Spikk Technologies
+            </Text>
+            <Text fontSize='1xl' style={{color:'white'}}>
+              Terms and conditions | Privacy Policy
             </Text>
           </VStack>
           <VStack w='full' h='full' >
-            <Heading as='h4' size='1xl' style={{color:'yellow'}}>
+            <Heading as='h4' size='1xl' style={{color:'#FFF59A'}} m={6}>
               Quicklinks
             </Heading>
             <Text fontSize='1xl' style={{color:'white'}}>
@@ -30,7 +33,7 @@ const LandingFooter = () => {
                      
           </VStack>
           <VStack w='full' h='full' >
-            <Heading as='h4' size='1xl' style={{color:'yellow'}}>
+            <Heading as='h4' size='1xl' style={{color:'#FFF59A'}}>
             </Heading>
             <Text fontSize='1xl' style={{color:'white'}}>
             </Text>   
