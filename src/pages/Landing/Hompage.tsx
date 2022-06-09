@@ -2,6 +2,7 @@ import { Box, Container, Flex, VStack, Image, Heading, Text, HStack, Button } fr
 import React from 'react'
 import LandingFooter from '../../components/landing/LandingFooter'
 import LandingHeader from '../../components/landing/LandingHeader'
+import LandingHeader2 from '../../components/landing/LandingHeader2'
 import userImage from './femaleuserimage.svg';
 import userImage2 from './femaleuserimage2.png';
 import progress from './progress.png';
@@ -13,7 +14,8 @@ import { VscGift, VscChevronDown } from 'react-icons/vsc';
 const Hompage = () => {
   return (
     <div>
-      <LandingHeader/>
+      {/* <LandingHeader/> */}
+      <LandingHeader2/>
       <Container maxW='container.x1' bg='#0D0D26'>
         <Flex h='100vh' py={20}>
           <VStack w='full' h='full'>
