@@ -17,7 +17,7 @@ const Hompage = () => {
       {/* <LandingHeader/> */}
       <LandingHeader2/>
       <Container maxW='container.x1' bg='#0D0D26'>
-        <Flex h='100vh' py={20}>
+        <Flex h='100vh' py={20} align={'start'}>
           <VStack w='full' h='full'>
             <div style={{backgroundRepeat : 'no-repeat',backgroundImage:`url(${fadedrectangle})`}}>
               <Heading as='h2' size='3xl' style={{color:'white'}}>
@@ -32,20 +32,22 @@ const Hompage = () => {
             <Text fontSize='1xl' style={{color:'white'}}>
               Spikk has got you covered. Spikk saves you time and energy so you can relax and have us run that errand or pick up and deliver.
             </Text>
-            <HStack>
+            <HStack align={'start'}>
               <Image src={progress} alt='progress' />
             </HStack>
             <HStack>
-              <Button colorScheme='yellow' variant='outline'   borderRadius='20px'>
+              <Button p={6} colorScheme='#FBA819' variant='outline'   borderRadius='25px' style={{borderColor: '#FBA819', color: '#FBA819'}}>
                 <AiOutlineShoppingCart/> &nbsp;  BUY ANYTHING
               </Button>
-              <Button colorScheme='yellow' variant='outline'   borderRadius='20px'>
+              <Button p={6} colorScheme='#FBA819' variant='outline'   borderRadius='25px' style={{borderColor: '#FBA819', color: '#FBA819'}}>
                 <VscGift/> &nbsp; SEND ANYTHING
               </Button>
             </HStack>
-            <HStack>
-              <Image src={bike} alt='bike' />
-            </HStack>
+            <div style={{backgroundRepeat : 'no-repeat',backgroundImage:`url(${bike})`}}>
+              <Heading as='h2' size='3xl' style={{color:'transparent'}} pl={12}>
+                groceries or make dinner?              
+              </Heading>
+            </div>
           </VStack>
           <VStack w='full' h='full' >
             <Image src={userImage2} alt='Spikk Logo' />

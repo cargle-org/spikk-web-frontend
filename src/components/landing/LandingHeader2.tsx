@@ -86,14 +86,15 @@ export default function LandingHeader2(): JSX.Element {
                 
                 <Button
                     display={{ base: 'none', md: 'inline-flex' }}
+                    as={'a'}
                     fontSize={'sm'}
                     fontWeight={600}
                     color={'white'}
-                    bg={'orange.500'}
-                    href={'#'}
+                    bg={'#FBA819'}
                     _hover={{
-                    bg: 'orange.300',
-                    }}>
+                    bg: '#FBA819.200',
+                    }}
+                    href={'#'}>
                     Join
                 </Button>
             </Stack>
