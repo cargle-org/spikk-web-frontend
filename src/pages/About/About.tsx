@@ -11,16 +11,16 @@ const About = () => {
   return (
     <div>
       <LandingHeader2/>
-      <Container maxW='container.x1' bg='#030319' pt={'80px'}>
+      <Container maxW='container.x1' bg='#030319' py={'80px'}>
         <Flex color={'white'} align={'center'}>
             <VStack>
                 <Heading as={'h3'} size='lg'>
                     Spikk is an on-demand delivery platform that
                 </Heading>
-                <Heading as={'i'} size='lg'>
+                <Heading as={'i'} size='lg' pb={'45px'}>
                     delivers just anything to customers.
                 </Heading>
-                <Image src={Rectangle} />
+                <Image src={Rectangle} pb={'45px'} />
                 <Text noOfLines={2}>
                     From the comfort of your home/offices, Spikk connects you to 
                     dedicated shoppers that run errands and deliver top notch services.
@@ -28,7 +28,7 @@ const About = () => {
                 <Text>
                     Spikk is dedicated to empowering people, communities and making life a lot easier.
                 </Text>
-                <HStack flexDirection={{base: 'column', xs: 'column', sm: 'column', md: 'row', lg: 'row'}}>
+                <HStack pt={'45px'} flexDirection={{base: 'column', xs: 'column', sm: 'column', md: 'row', lg: 'row'}}>
                     <VStack>
                         <VStack>
                             <Badge fontSize='large' px={5} py={3} bg={'gray.600'} color={'white'}>

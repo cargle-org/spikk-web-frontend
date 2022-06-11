@@ -63,7 +63,9 @@ export default function LandingHeader2(): JSX.Element {
             </Flex>
             <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
             
-                <Image p={6} src={spikklogo} alt='Spikk Logo' />
+                <NavLink to="/" >
+                  <Image p={6} src={spikklogo} alt='Spikk Logo' />
+                </NavLink>
 
             </Flex>
 
@@ -204,11 +206,11 @@ export default function LandingHeader2(): JSX.Element {
    
     {
       label: 'Home',
-      href: '#',
+      href: '/',
     },
     {
       label: 'About',
-      href: '#',
+      href: '/about',
     },
   ];
   

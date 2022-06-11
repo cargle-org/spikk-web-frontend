@@ -11,7 +11,7 @@ import fadedrectangle from './fadedrectangle.png';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 import { VscGift, VscChevronDown } from 'react-icons/vsc';
 
-const Hompage = () => {
+const Homepage = () => {
   return (
     <div>
       <LandingHeader2/>
@@ -45,7 +45,7 @@ const Hompage = () => {
                 <VscGift/> &nbsp; SEND ANYTHING
               </Button>
             </HStack>
-            <div style={{paddingTop: '20px', marginTop: '20px', backgroundRepeat : 'no-repeat',backgroundImage:`url(${bike})`}}>
+            <div style={{paddingTop: '40px', marginTop: '100px', backgroundRepeat : 'no-repeat',backgroundImage:`url(${bike})`}}>
               <Heading as='h2' size='3xl' style={{color:'transparent'}} pl={12}>
                 groceries or make dinner?              
               </Heading>
@@ -61,4 +61,4 @@ const Hompage = () => {
   )
 }
 
-export default Hompage
+export default Homepage

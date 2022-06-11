@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router'
-const Hompage = React.lazy(() => import('./Hompage')) 
+const Hompage = React.lazy(() => import('./Homepage')) 
 const About = React.lazy(() => import('../About/About')) 
 
 const LandingRoutes = () => {

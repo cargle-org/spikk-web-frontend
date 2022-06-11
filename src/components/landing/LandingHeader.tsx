@@ -10,7 +10,9 @@ const LandingHeader = () => {
     <div>
       <Flex bg='#0D0D26'>
         <Box>
-          <Image p={6} src={spikklogo} alt='Spikk Logo' />
+          <NavLink to="/" >
+            <Image p={6} src={spikklogo} alt='Spikk Logo' />
+          </NavLink>
         </Box>
         <Spacer />
         <Box p='4' style={{color:'white'}}>

@@ -5,6 +5,7 @@ import EmailIcon from "./GmailIcon.png";
 import TwitterIcon from "./TwitterIcon.png";
 import FacebookIcon from "./FacebookIcon.png";
 import InstagramIcon from "./InstagramIcon.png";
+import { NavLink } from 'react-router-dom';
 
 const LandingFooter = () => {
   return (
@@ -12,7 +13,9 @@ const LandingFooter = () => {
       <Container maxW='container.x1' bg='#0D0D26'>
         <Flex py={5}>
           <VStack w='full' h='full'>
-            <Image p={6} src={spikklogo} alt='Spikk Logo' />
+            <NavLink to="/" >
+              <Image p={6} src={spikklogo} alt='Spikk Logo' />
+            </NavLink>
             <Text fontSize='1xl' style={{color:'white'}}>
               © 2022 Spikk Technologies
             </Text>
@@ -24,12 +27,36 @@ const LandingFooter = () => {
             <Heading as='h4' size='1xl' style={{color:'#FFF59A'}} m={6}>
               Quicklinks
             </Heading>
-            <Text fontSize='1xl' style={{color:'white'}}>
-              About            
-            </Text>   
-            <Text fontSize='1xl' style={{color:'white'}}>
-              Contact Us            
-            </Text>              
+            <Button
+                fontWeight={400}
+                color={'white'}
+                variant={'link'}
+                _hover={{
+                  color: 'rgb(251, 168, 25)',
+                }}
+                _active={{
+                  color: 'rgb(251, 168, 25)',
+                }}
+                >
+                <NavLink
+                    to="/about"
+                >About</NavLink>
+            </Button>
+            <Button
+                fontWeight={400}
+                color={'white'}
+                variant={'link'}
+                _hover={{
+                  color: 'rgb(251, 168, 25)',
+                }}
+                _active={{
+                  color: 'rgb(251, 168, 25)',
+                }}
+                >
+                <NavLink
+                    to="/"
+                >Contact us</NavLink>
+            </Button>           
           </VStack>
           <VStack w='full' h='full' >
                      
