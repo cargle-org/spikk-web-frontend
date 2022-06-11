@@ -16,41 +16,44 @@ const Hompage = () => {
     <div>
       {/* <LandingHeader/> */}
       <LandingHeader2/>
-      <Container maxW='container.x1' bg='#0D0D26'>
-        <Flex h='100vh' py={20} align={'start'}>
+      <Container maxW='container.x1' bg='#030319'>
+        <Flex h='100vh' py={20} align={'left'} >
           <VStack w='full' h='full'>
             <div style={{backgroundRepeat : 'no-repeat',backgroundImage:`url(${fadedrectangle})`}}>
               <Heading as='h2' size='3xl' style={{color:'white'}}>
                 Too tired to shop for 
               </Heading>
             </div>
-            <div>
-              <Heading as='h2' size='3xl' style={{color:'white'}} pl={12}>
-                groceries or make dinner?              
-              </Heading>
-            </div>
-            <Text fontSize='1xl' style={{color:'white'}}>
+            <Heading as='h2' size='3xl' style={{color:'white'}} pl={{ base: '0px', md: '15px', lg:'55px' }}>
+              groceries or make dinner?              
+            </Heading>
+            <Text fontSize='1xl' style={{color:'white'}} pl={{ base: '0px', md: '15px', lg:'55px' }}>
               Spikk has got you covered. Spikk saves you time and energy so you can relax and have us run that errand or pick up and deliver.
             </Text>
-            <HStack align={'start'}>
+            {/* <HStack align={'start'}>
               <Image src={progress} alt='progress' />
-            </HStack>
+            </HStack> */}
+            <div style={{paddingTop: '20px', marginLeft: '15px', marginTop: '20px', backgroundRepeat : 'no-repeat',backgroundImage:`url(${progress})`}}>
+              <Heading as='h3' size='2xl' style={{color:'transparent'}}>
+                groceries or make dinner?            
+              </Heading>
+            </div>
             <HStack>
-              <Button p={6} colorScheme='#FBA819' variant='outline'   borderRadius='25px' style={{borderColor: '#FBA819', color: '#FBA819'}}>
+              <Button p={6} colorScheme='#FBA819' variant='outline' borderRadius='25px' style={{borderColor: '#FBA819', color: '#FBA819'}}>
                 <AiOutlineShoppingCart/> &nbsp;  BUY ANYTHING
               </Button>
               <Button p={6} colorScheme='#FBA819' variant='outline'   borderRadius='25px' style={{borderColor: '#FBA819', color: '#FBA819'}}>
                 <VscGift/> &nbsp; SEND ANYTHING
               </Button>
             </HStack>
-            <div style={{backgroundRepeat : 'no-repeat',backgroundImage:`url(${bike})`}}>
+            <div style={{paddingTop: '20px', marginTop: '20px', backgroundRepeat : 'no-repeat',backgroundImage:`url(${bike})`}}>
               <Heading as='h2' size='3xl' style={{color:'transparent'}} pl={12}>
                 groceries or make dinner?              
               </Heading>
             </div>
           </VStack>
-          <VStack w='full' h='full' >
-            <Image src={userImage2} alt='Spikk Logo' />
+          <VStack w='full' h='full'  >
+            <Image src={userImage2} alt='Spikk Logo'/>
           </VStack>
         </Flex>
       </Container>

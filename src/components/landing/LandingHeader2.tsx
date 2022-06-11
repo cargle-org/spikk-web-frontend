@@ -37,9 +37,9 @@ export default function LandingHeader2(): JSX.Element {
             minH={'60px'}
             py={{ base: 2 }}
             px={{ base: 4 }}
-            borderBottom={1}
-            borderStyle={'solid'}
-            borderColor={useColorModeValue('gray.200', 'gray.900')}
+            // borderBottom={1}
+            // borderStyle={'solid'}
+            // borderColor={useColorModeValue('gray.200', 'gray.900')}
             align={'center'}>
             <Flex
             flex={{ base: 1, md: 'auto' }}
@@ -50,7 +50,13 @@ export default function LandingHeader2(): JSX.Element {
                 icon={
                 isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
                 }
-                variant={'ghost'}
+                variant={'outline'}
+                color='rgb(255, 245, 154)'
+                _hover={{
+                  color: '#0D0D26',
+                  bgColor: 'rgb(255, 245, 154)',
+                  borderColor: 'rgb(255, 245, 154)'
+                }}
                 aria-label={'Toggle Navigation'}
             />
             </Flex>
@@ -71,6 +77,12 @@ export default function LandingHeader2(): JSX.Element {
                     fontWeight={400}
                     color={'white'}
                     variant={'link'}
+                    _hover={{
+                      color: 'rgb(251, 168, 25)',
+                    }}
+                    _active={{
+                      color: 'rgb(251, 168, 25)',
+                    }}
                     href={'#'}>
                     Home
                 </Button>
@@ -80,6 +92,12 @@ export default function LandingHeader2(): JSX.Element {
                     fontWeight={400}
                     color={'white'}
                     variant={'link'}
+                    _hover={{
+                      color: 'rgb(251, 168, 25)',
+                    }}
+                    _active={{
+                      color: 'rgb(251, 168, 25)',
+                    }}
                     href={'#'}>
                     About
                 </Button>
