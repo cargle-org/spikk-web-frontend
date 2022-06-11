@@ -10,7 +10,7 @@ const LandingFooter = () => {
   return (
     <div>
       <Container maxW='container.x1' bg='#0D0D26'>
-        <Flex h='50vh' py={20}>
+        <Flex py={5}>
           <VStack w='full' h='full'>
             <Image p={6} src={spikklogo} alt='Spikk Logo' />
             <Text fontSize='1xl' style={{color:'white'}}>

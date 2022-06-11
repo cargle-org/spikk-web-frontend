@@ -17,8 +17,8 @@ const Hompage = () => {
       {/* <LandingHeader/> */}
       <LandingHeader2/>
       <Container maxW='container.x1' bg='#030319'>
-        <Flex h='100vh' py={20} align={'left'} >
-          <VStack w='full' h='full'>
+        <Flex py={20} align={'left'} flexDirection={{base: 'column-reverse', xs: 'column-reverse', sm: 'column-reverse', md: 'row', lg: 'row'}}>
+          <VStack>
             <div style={{backgroundRepeat : 'no-repeat',backgroundImage:`url(${fadedrectangle})`}}>
               <Heading as='h2' size='3xl' style={{color:'white'}}>
                 Too tired to shop for 
@@ -39,10 +39,10 @@ const Hompage = () => {
               </Heading>
             </div>
             <HStack>
-              <Button p={6} colorScheme='#FBA819' variant='outline' borderRadius='25px' style={{borderColor: '#FBA819', color: '#FBA819'}}>
+              <Button p={6} colorScheme='#FBA819' variant='outline' borderWidth={'2px'}  borderRadius='25px' style={{borderColor: '#FBA819', color: '#FBA819'}}>
                 <AiOutlineShoppingCart/> &nbsp;  BUY ANYTHING
               </Button>
-              <Button p={6} colorScheme='#FBA819' variant='outline'   borderRadius='25px' style={{borderColor: '#FBA819', color: '#FBA819'}}>
+              <Button p={6} colorScheme='#FBA819' variant='outline' borderWidth={'2px'}   borderRadius='25px' style={{borderColor: '#FBA819', color: '#FBA819'}}>
                 <VscGift/> &nbsp; SEND ANYTHING
               </Button>
             </HStack>
@@ -52,7 +52,7 @@ const Hompage = () => {
               </Heading>
             </div>
           </VStack>
-          <VStack w='full' h='full'  >
+          <VStack>
             <Image src={userImage2} alt='Spikk Logo'/>
           </VStack>
         </Flex>
