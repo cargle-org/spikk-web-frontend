@@ -1,4 +1,5 @@
 import spikklogo from "./spikklogo.png";
+import { NavLink } from 'react-router-dom';
 
 import {
     Box,
@@ -72,7 +73,6 @@ export default function LandingHeader2(): JSX.Element {
             direction={'row'}
             spacing={6}>
                 <Button
-                    as={'a'}
                     fontSize={'sm'}
                     fontWeight={400}
                     color={'white'}
@@ -82,12 +82,13 @@ export default function LandingHeader2(): JSX.Element {
                     }}
                     _active={{
                       color: 'rgb(251, 168, 25)',
-                    }}
-                    href={'#'}>
-                    Home
+                    }}>
+                    <NavLink
+                        to="/"
+                    >Home</NavLink>
                 </Button>
                 <Button
-                    as={'a'}
+                    
                     fontSize={'sm'}
                     fontWeight={400}
                     color={'white'}
@@ -98,8 +99,11 @@ export default function LandingHeader2(): JSX.Element {
                     _active={{
                       color: 'rgb(251, 168, 25)',
                     }}
-                    href={'#'}>
-                    About
+                    >
+                    
+                    <NavLink
+                        to="/about"
+                    >About</NavLink>
                 </Button>
                 
                 <Button

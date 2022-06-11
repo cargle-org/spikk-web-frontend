@@ -2,6 +2,7 @@ import React from 'react'
 import { Image, Box, Button, Spacer, Flex } from '@chakra-ui/react'
 import spikklogo from "./spikklogo.png";
 import { VscGift, VscChevronDown } from 'react-icons/vsc';
+import { NavLink } from 'react-router-dom';
 
 const LandingHeader = () => {
   return (
@@ -13,10 +14,15 @@ const LandingHeader = () => {
         </Box>
         <Spacer />
         <Box p='4' style={{color:'white'}}>
-          Home
+          
+          <NavLink
+              to="/"
+          >Home</NavLink>
         </Box>
         <Box p='4' style={{color:'white'}}>
-          About
+        <NavLink
+              to="/"
+          >About</NavLink>
         </Box>
         <Box pr={100} pt={2}>
           <Button bg='#FBA819' color='#0D0D26'> Join &nbsp; <VscChevronDown/></Button>

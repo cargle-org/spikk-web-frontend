@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div>
       <LandingHeader2/>
-      <Container maxW='container.x1' bg='#030319'>
+      <Container maxW='container.x1' bg='#030319' pt={'80px'}>
         <Flex color={'white'} align={'center'}>
             <VStack>
                 <Heading as={'h3'} size='lg'>
@@ -21,7 +21,7 @@ const About = () => {
                     delivers just anything to customers.
                 </Heading>
                 <Image src={Rectangle} />
-                <Text>
+                <Text noOfLines={2}>
                     From the comfort of your home/offices, Spikk connects you to 
                     dedicated shoppers that run errands and deliver top notch services.
                 </Text>
