@@ -14,7 +14,6 @@ import { VscGift, VscChevronDown } from 'react-icons/vsc';
 const Hompage = () => {
   return (
     <div>
-      {/* <LandingHeader/> */}
       <LandingHeader2/>
       <Container maxW='container.x1' bg='#030319'>
         <Flex py={20} align={'left'} flexDirection={{base: 'column-reverse', xs: 'column-reverse', sm: 'column-reverse', md: 'row', lg: 'row'}}>
