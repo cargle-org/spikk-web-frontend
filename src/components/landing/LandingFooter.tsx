@@ -1,77 +1,75 @@
-import { Box, Container, Flex, VStack, Image, Heading, Text, HStack, Button } from '@chakra-ui/react'
-import React from 'react'
-import { NavLink } from 'react-router-dom';
+import { Box, Container, Flex, VStack, Image, Heading, Text, HStack, Button } from "@chakra-ui/react";
+import React from "react";
+import { FaFacebookF } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
+import { Link, NavLink } from "react-router-dom";
+import FooterFacebookLogo from "../../assets/icons/footer-facebook-logo";
+import FooterGmailLogo from "../../assets/icons/footer-gmail-logo";
+import FooterInstagramLogo from "../../assets/icons/footer-instagram-logo";
+import FooterTwitterLogo from "../../assets/icons/footer-twitter-logo";
 
 const LandingFooter = () => {
   return (
-    <div>
-      <Container maxW='container.x1' bg='#0D0D26'>
-        <Flex py={5}>
-          <VStack w='full' h='full'>
-            <NavLink to="/" >
-              <Image p={6} src={require("../../assets/images/spikklogo.png").default} alt='Spikk Logo' />
-            </NavLink>
-            <Text fontSize='1xl' style={{color:'white'}}>
-              © 2022 Spikk Technologies
-            </Text>
-            <Text fontSize='1xl' style={{color:'white'}}>
-              Terms and conditions | Privacy Policy
-            </Text>
-          </VStack>
-          <VStack w='full' h='full' >
-            <Heading as='h4' size='1xl' style={{color:'#FFF59A'}} m={6}>
-              Quicklinks
-            </Heading>
-            <Button
-                fontWeight={400}
-                color={'white'}
-                variant={'link'}
-                _hover={{
-                  color: 'rgb(251, 168, 25)',
-                }}
-                _active={{
-                  color: 'rgb(251, 168, 25)',
-                }}
-                >
-                <NavLink
-                    to="/about"
-                >About</NavLink>
-            </Button>
-            <Button
-                fontWeight={400}
-                color={'white'}
-                variant={'link'}
-                _hover={{
-                  color: 'rgb(251, 168, 25)',
-                }}
-                _active={{
-                  color: 'rgb(251, 168, 25)',
-                }}
-                >
-                <NavLink
-                    to="/"
-                >Contact us</NavLink>
-            </Button>           
-          </VStack>
-          <VStack w='full' h='full' >
-                     
-          </VStack>
-          <VStack w='full' h='full' >
-            <Heading as='h4' size='1xl' style={{color:'#FFF59A'}} m={6}>
-              Get in touch with us
-            </Heading>
-            <Flex direction={{base: 'column', md: 'row' }} >
-         
-            </Flex>
-            <Text fontSize='1xl' style={{color:'white'}}>
-            </Text>   
-            <Text fontSize='1xl' style={{color:'white'}}>
-            </Text>        
-          </VStack>
+    <Box as={"footer"} background={"spikk-header-bg"}>
+      <Box maxW={"1200px"} paddingX={"16px"} marginX={"auto"} paddingTop={"32px"} paddingBottom={"24px"}>
+        <Flex width={"100%"} justifyContent={"space-between"}>
+          <HStack spacing={"180"}>
+            <Box>
+              <Box height={"24px"} display={"flex"} marginBottom={"32px"} alignItems={"flex-end"}>
+                <Link to={"/"}>
+                  <Image src={require("../../assets/images/spikk-logo2.png")} height={"24px"} alt="Spikk Logo" />
+                </Link>
+              </Box>
+              <VStack spacing={"12px"} alignItems={"flex-start"}>
+                <Text fontSize="sm" fontWeight={"bold"} color={"white"}>
+                  © 2022 Spikk Technologies
+                </Text>
+                <Text fontSize="sm" color={"spikk-white"}>
+                  <Link to={"#"}>Terms and conditions</Link> | <Link to={"#"}>Privacy Policy</Link>
+                </Text>
+              </VStack>
+            </Box>
+            <Box>
+              <Box height={"24px"} display={"flex"} marginBottom={"32px"}>
+                <Text fontSize="xl" fontWeight={"bold"} color={"spikk-yellow"}>
+                  Quicklinks
+                </Text>
+              </Box>
+              <VStack spacing={"12px"} alignItems={"flex-start"}>
+                <Text fontSize="sm" color={"spikk-white"}>
+                  <Link to={"#"}>About Us</Link>
+                </Text>
+                <Text fontSize="sm" color={"spikk-white"}>
+                  <Link to={"#"}>Contact Us</Link>
+                </Text>
+              </VStack>
+            </Box>
+          </HStack>
+          <Box>
+            <Box height={"24px"} display={"flex"} marginBottom={"40px"}>
+              <Text fontSize="xl" fontWeight={"bold"} color={"spikk-yellow"}>
+                Get in touch with us
+              </Text>
+            </Box>
+            <HStack spacing={"36px"} alignItems={"flex-start "}>
+              <Link to="#">
+                <FooterGmailLogo />
+              </Link>
+              <Link to="#">
+                <FooterTwitterLogo />
+              </Link>
+              <Link to="#">
+                <FooterFacebookLogo />
+              </Link>
+              <Link to="#">
+                <FooterInstagramLogo />
+              </Link>
+            </HStack>
+          </Box>
         </Flex>
-      </Container>
-    </div>
-  )
-}
+      </Box>
+    </Box>
+  );
+};
 
-export default LandingFooter
+export default LandingFooter;

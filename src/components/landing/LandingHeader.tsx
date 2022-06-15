@@ -7,8 +7,8 @@ import { Link, NavLink } from "react-router-dom";
 const LandingHeader = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   return (
-    <Box as="header" paddingX={"32"} background={"spikk-header-bg"}>
-      <Flex alignItems={"center"} justifyContent={"space-between"}>
+    <Box as="header"  background={"spikk-header-bg"}>
+      <Flex alignItems={"center"} maxW ={"1200px"} paddingX ={"16px"} marginX ={"auto"} justifyContent={"space-between"}>
         <Image src={require("../../assets/images/spikklogo.png")} height={"7"} alt="Spikk Logo" />
         <Box as="nav" height={"72px"} display={"flex"} alignItems={"center"}>
           <Box as="ul" display={"flex"} gap={"40px"} marginRight={"40px"}>

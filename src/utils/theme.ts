@@ -33,7 +33,7 @@ export const theme = extendTheme({
     "spikk-orange": "#FBA819",
     "spikk-text1": "#2D2E48",
     "spikk-red": "#E43F3C",
-    "moneypoint-yellow": "#F08922",
+    "spikk-yellow": "#FFF59A",
     "moneypoint-green": "#00B713",
     "moneypoint-dark-blue": "#004BBC",
   },
