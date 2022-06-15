@@ -2,15 +2,11 @@ import { Box, Container, Flex, VStack, Image, Heading, Text, HStack, Button, Bad
 import React from 'react'
 import LandingFooter from '../../components/landing/LandingFooter'
 import LandingHeader from '../../components/landing/LandingHeader'
-import LandingHeader2 from '../../components/landing/LandingHeader2'
-import Rectangle from './rectangle.png'
-import AboutHero from './abouthero.png'
-import Ellipse from './ellipse.png'
 
 const About = () => {
   return (
     <div>
-      <LandingHeader2/>
+      <LandingHeader/>
       <Container maxW='container.x1' bg='#030319' py={'80px'}>
         <Flex color={'white'} align={'center'}>
             <VStack>
@@ -20,7 +16,7 @@ const About = () => {
                 <Heading as={'i'} size='lg' pb={'45px'}>
                     delivers just anything to customers.
                 </Heading>
-                <Image src={Rectangle} pb={'45px'} />
+                {/* <Image src={require("../../assets/images/about/")} pb={'45px'} /> */}
                 <Text noOfLines={2}>
                     From the comfort of your home/offices, Spikk connects you to 
                     dedicated shoppers that run errands and deliver top notch services.
@@ -57,8 +53,8 @@ const About = () => {
                     {/* <Box bgImage={Ellipse}>
                         <Image src={AboutHero} />
                     </Box> */}
-                    <div style={{backgroundRepeat : 'no-repeat',backgroundImage:`url(${Ellipse})`}}>
-                        <Image src={AboutHero} />
+                    <div style={{backgroundRepeat : 'no-repeat',backgroundImage:``}}>
+                        {/* <Image src={AboutHero} /> */}
                     </div>
                     
                     <VStack>

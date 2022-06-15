@@ -1,10 +1,5 @@
 import { Box, Container, Flex, VStack, Image, Heading, Text, HStack, Button } from '@chakra-ui/react'
 import React from 'react'
-import spikklogo from "./spikklogoyellow.png";
-import EmailIcon from "./GmailIcon.png";
-import TwitterIcon from "./TwitterIcon.png";
-import FacebookIcon from "./FacebookIcon.png";
-import InstagramIcon from "./InstagramIcon.png";
 import { NavLink } from 'react-router-dom';
 
 const LandingFooter = () => {
@@ -14,7 +9,7 @@ const LandingFooter = () => {
         <Flex py={5}>
           <VStack w='full' h='full'>
             <NavLink to="/" >
-              <Image p={6} src={spikklogo} alt='Spikk Logo' />
+              <Image p={6} src={require("../../assets/images/spikklogo.png").default} alt='Spikk Logo' />
             </NavLink>
             <Text fontSize='1xl' style={{color:'white'}}>
               © 2022 Spikk Technologies
@@ -66,10 +61,7 @@ const LandingFooter = () => {
               Get in touch with us
             </Heading>
             <Flex direction={{base: 'column', md: 'row' }} >
-              <Image src={EmailIcon} alt='Email Icon' />
-              <Image src={TwitterIcon} alt='Twitter Icon' />
-              <Image src={FacebookIcon} alt='Facebook Icon' />
-              <Image src={InstagramIcon} alt='Instagram Icon' />
+         
             </Flex>
             <Text fontSize='1xl' style={{color:'white'}}>
             </Text>   

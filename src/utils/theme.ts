@@ -15,12 +15,12 @@ const breakpoints = createBreakpoints({
 
 export const theme = extendTheme({
   styles: {
-    // global: () => ({
-    //     'html, body': {
-    //         fontFamily: 'sans-serif',
-    //         fontWeight: 400
-    //       },
-    // }),
+    global: () => ({
+        'html, body': {
+            fontFamily: 'Gilroy, sans-serif',
+            fontWeight: 400
+          },
+    }),
   },
   breakpoints,
   fonts: {
@@ -28,11 +28,11 @@ export const theme = extendTheme({
     body: '"Gilroy", sans-serif'
   },
   colors: {
-    "moneypoint-light-blue": "#F5F9FF",
-    "moneypoint-blue": "#0361F0",
-    "money-point-alt-blue": "#00B6D4",
-    "moneypoint-red": "#E94444",
-    "moneypoint-gray": "#F1F0F7",
+    "spikk-header-bg" : "#0D0D26",
+    "spikk-white": "#F5F4FF",
+    "spikk-orange": "#FBA819",
+    "spikk-text1": "#2D2E48",
+    "spikk-red": "#E43F3C",
     "moneypoint-yellow": "#F08922",
     "moneypoint-green": "#00B713",
     "moneypoint-dark-blue": "#004BBC",

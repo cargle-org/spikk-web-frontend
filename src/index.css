@@ -1,5 +1,30 @@
 @import url("./assets/fonts/fonts.css");
 
-body {
-  font-family:  Gilroy !important;
+.header-link {
+    height: 72px;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    color: #F5F4FF;
+    padding: 0 16px;
+    display: flex;
+    position: relative;
+}
+
+.active .header-link {
+    color: #FBA819;
+    font-weight: 700;
+}
+
+.active .header-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #FBA819;
+    height: 5px;
+    border-radius: 5px 5px 0px 0px;
+    z-index: 5;
+    width: 100%;
 }
