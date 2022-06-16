@@ -34,8 +34,8 @@ export const theme = extendTheme({
     "spikk-text1": "#2D2E48",
     "spikk-red": "#E43F3C",
     "spikk-yellow": "#FFF59A",
-    "moneypoint-green": "#00B713",
-    "moneypoint-dark-blue": "#004BBC",
+    "spikk-dark-bg": "#030319",
+    "spikk-white2": "#ECEAFF",
   },
   space: {
     14: "3.5rem",
