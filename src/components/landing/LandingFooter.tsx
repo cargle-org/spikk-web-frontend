@@ -12,15 +12,15 @@ const LandingFooter = () => {
   return (
     <Box as={"footer"} background={"spikk-header-bg"}>
       <Box maxW={"1200px"} paddingX={"16px"} marginX={"auto"} paddingTop={"32px"} paddingBottom={"24px"}>
-        <Flex width={"100%"} justifyContent={"space-between"}>
-          <HStack spacing={"180"}>
-            <Box>
-              <Box height={"24px"} display={"flex"} marginBottom={"32px"} alignItems={"flex-end"}>
+        <Flex width={"100%"} gap ={"56px"} flexDirection ={{base : "column-reverse" ,md: "row"}} alignItems ={{base: "center", md : "flex-start"}} justifyContent={"space-between"}>
+          <HStack spacing={{base : "80px", lg :"180px" } }>
+            <Box textAlign={{base: "center", md: "left"}}>
+              <Box height={"24px"} display={"flex"} marginBottom={"32px"} alignItems={"flex-end"} justifyContent ={{base : "center" , md: "left" }}>
                 <Link to={"/"}>
                   <Image src={require("../../assets/images/spikk-logo2.png")} height={"24px"} alt="Spikk Logo" />
                 </Link>
               </Box>
-              <VStack spacing={"12px"} alignItems={"flex-start"}>
+              <VStack spacing={"12px"} alignItems={{md: "flex-start"}} >
                 <Text fontSize="sm" fontWeight={"bold"} color={"white"}>
                   © 2022 Spikk Technologies
                 </Text>
@@ -29,7 +29,7 @@ const LandingFooter = () => {
                 </Text>
               </VStack>
             </Box>
-            <Box>
+            <Box display={{base : "none" , md : "block"}}>
               <Box height={"24px"} display={"flex"} marginBottom={"32px"}>
                 <Text fontSize="xl" fontWeight={"bold"} color={"spikk-yellow"}>
                   Quicklinks
@@ -45,9 +45,9 @@ const LandingFooter = () => {
               </VStack>
             </Box>
           </HStack>
-          <Box>
-            <Box height={"24px"} display={"flex"} marginBottom={"40px"}>
-              <Text fontSize="xl" fontWeight={"bold"} color={"spikk-yellow"}>
+          <Box textAlign={{base: "center", md: "left"}}>
+            <Box height={"24px"} display={"flex"} marginBottom={{base : "20px" , md : "40px"}} >
+              <Text fontSize="xl" fontWeight={"bold"} color={"spikk-yellow"} w={"100%"}>
                 Get in touch with us
               </Text>
             </Box>

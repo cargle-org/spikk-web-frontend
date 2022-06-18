@@ -7,10 +7,10 @@ import { Link, NavLink } from "react-router-dom";
 const LandingHeader = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   return (
-    <Box as="header"  background={"spikk-header-bg"}>
-      <Flex alignItems={"center"} maxW ={"1200px"} paddingX ={"16px"} marginX ={"auto"} justifyContent={"space-between"}>
-        <Image src={require("../../assets/images/spikklogo.png")} height={"7"} alt="Spikk Logo" />
-        <Box as="nav" height={"72px"} display={"flex"} alignItems={"center"}>
+    <Box as="header" background={"spikk-header-bg"}>
+      <Flex height={"72px"} alignItems={"center"} maxW={"1200px"} paddingX={"16px"} marginX={"auto"} justifyContent={{ base: "center", md: "space-between" }}>
+        <Image src={require("../../assets/images/spikklogo.png")} height={"32px"} alt="Spikk Logo" />
+        <Box as="nav" height={"72px"} display={{ base: "none", md: "flex" }} alignItems={"center"}>
           <Box as="ul" display={"flex"} gap={"40px"} marginRight={"40px"}>
             <NavLink to={"/"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
               <div className="header-link">Home</div>

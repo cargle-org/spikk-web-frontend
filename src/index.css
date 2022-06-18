@@ -28,3 +28,29 @@
     z-index: 5;
     width: 100%;
 }
+.about-header {
+    position: relative;
+    display: inline;
+}
+
+.about-header::before {
+    content: "";
+    position: absolute;
+    width: 76px;
+    height: 3px;
+    background: #353547;
+    left: -12px;
+    top: 50%;
+    transform: translateX(-100%) translateY(-50%);
+}
+
+.about-header::after {
+    content: "";
+    position: absolute;
+    width: 76px;
+    height: 3px;
+    background: #353547;
+    right: -12px;
+    top: 50%;
+    transform: translateX(100%) translateY(-50%);
+}
