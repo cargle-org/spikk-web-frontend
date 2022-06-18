@@ -5,6 +5,9 @@ import { FaBeer, FaBell, FaCartPlus, FaHome } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import { BellIcon, ChatIcon } from "@chakra-ui/icons";
 import { SiChatbot } from "react-icons/si";
+import { VscHome } from "react-icons/vsc";
+import { BsCart } from "react-icons/bs";
+import { BiChat } from "react-icons/bi";
 
 
 function InnerHeader() {
@@ -101,16 +104,16 @@ function InnerHeader() {
                 <Box as="nav" height={"72px"} display={"flex"} alignItems={"center"}>
                     <Box as="ul" display={"flex"} gap={"40px"} marginRight={"40px"}>
                         <NavLink to={"/"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
-                            <div className="header-link"> <FaHome/> &nbsp; &nbsp; Home</div>
+                            <div className="header-link"> <VscHome/> &nbsp; &nbsp; Home</div>
                         </NavLink>
                         <NavLink to={"/about"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
-                            <div className="header-link"> <FaCartPlus/> &nbsp; &nbsp; Orders</div>
+                            <div className="header-link"> <BsCart/> &nbsp; &nbsp; Orders</div>
                         </NavLink>
                         <NavLink to={"/about"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
                             <div className="header-link"> <FiBell/> &nbsp; &nbsp; Alerts</div>
                         </NavLink>
                         <NavLink to={"/about"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
-                            <div className="header-link"> <ChatIcon/> &nbsp; &nbsp; Chat</div>
+                            <div className="header-link"> <BiChat/> &nbsp; &nbsp; Chat</div>
                         </NavLink>
                     </Box>
                 </Box>
