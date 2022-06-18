@@ -30,6 +30,8 @@ export const theme = extendTheme({
   colors: {
     "spikk-header-bg" : "#0D0D26",
     "spikk-inner-header-bg" : "#17173F",
+    "spikk-inner-page-bg" : "#030319",
+    "spikk-box-bg" : "#0A0A26",
     "spikk-white": "#F5F4FF",
     "spikk-orange": "#FBA819",
     "spikk-text1": "#2D2E48",
