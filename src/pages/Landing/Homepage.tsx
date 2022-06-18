@@ -3,6 +3,7 @@ import LandingFooter from "../../components/landing/LandingFooter";
 import LandingHeader from "../../components/landing/LandingHeader";
 import { BsCart2 } from "react-icons/bs";
 import { VscPackage } from "react-icons/vsc";
+import { NavLink } from "react-router-dom";
 
 const Homepage = () => {
   return (
@@ -39,6 +40,8 @@ const Homepage = () => {
                   <Box height={"8px"} width={"8px"} borderRadius={"9999px"} bg={"spikk-yellow"}></Box>
                 </Flex>
                 <HStack marginBottom={"96px"} width={"100%"} justifyContent={{ base: "center", md: "left" }}>
+                  <NavLink to={"/buy-anything"}>
+
                   <Box
                     padding={"0 24px"}
                     border={"1px solid"}
@@ -49,18 +52,22 @@ const Homepage = () => {
                     gap={"10px"}
                     height={"48px"}
                   >
-                    <BsCart2 size={18} />
-                    <Text
-                      as={"span"}
-                      textTransform={"uppercase"}
-                      fontWeight={"semibold"}
-                      fontSize={{ base: "sm", md: "lg" }}
-                      lineHeight={"100%"}
-                      paddingTop={"4px"}
-                    >
-                      Buy anything
-                    </Text>
+                      <BsCart2 size={18} />
+                      <Text
+                        as={"span"}
+                        textTransform={"uppercase"}
+                        fontWeight={"semibold"}
+                        fontSize={{ base: "sm", md: "lg" }}
+                        lineHeight={"100%"}
+                        paddingTop={"4px"}
+                      >
+                        
+                          Buy anything
+                      </Text>
+
                   </Box>
+                  </NavLink>
+
                   <Box
                     padding={"0 24px"}
                     border={"1px solid"}
