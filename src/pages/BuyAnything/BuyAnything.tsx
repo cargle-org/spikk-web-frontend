@@ -16,8 +16,8 @@ function BuyAnything2() {
             <InnerHeader/>
             <Container maxW='container.x1' bg='spikk-inner-page-bg'>
                 
-                <Flex p={30} align={'left'} flexDirection={{base: 'column-reverse', xs: 'column-reverse', sm: 'column-reverse', md: 'row', lg: 'row'}}>
-                    <VStack w={'full'}  bgColor={"spikk-box-bg"} borderRadius={"20px"} >
+                <Flex p={50} align={'left'} flexDirection={{base: 'column-reverse', xs: 'column-reverse', sm: 'column-reverse', md: 'row', lg: 'row'}}>
+                    <VStack w={'container.xl'} maxW={'1000'} bgColor={"spikk-box-bg"} borderRadius={"20px"} >
                         
                         <Box borderTopRadius={"20px"} borderBottomRadius={"0px"} px={"20%"} py={10} bgColor={"spikk-inner-header-bg"} >
                             
@@ -50,14 +50,14 @@ function BuyAnything2() {
                                     pointerEvents='none'
                                     children={<BsCart color='gray' />}
                                     />
-                                    <Input colorScheme={'blue'} bgColor={'spikk-inner-page-bg'} variant='outline' placeholder='What can we get you?'></Input>
+                                    <Input size={'lg'} colorScheme={'blue'} bgColor={'spikk-inner-page-bg'} variant='outline' placeholder='What can we get you?'></Input>
                                 </InputGroup>
                                 <InputGroup>
                                     <InputLeftElement
                                     pointerEvents='none'
                                     children={<BsImage color='gray' /> }
                                     />
-                                    <Input bgColor={'spikk-inner-page-bg'} variant='outline' placeholder='Attach Image- Optional'></Input>
+                                    <Input size={'lg'} bgColor={'spikk-inner-page-bg'} variant='outline' placeholder='Attach Image- Optional'></Input>
                                 </InputGroup>
                             </HStack>
                             <HStack py={4}>
@@ -66,14 +66,14 @@ function BuyAnything2() {
                                     pointerEvents='none'
                                     children={<FaDollarSign color="gray"/>}
                                     />
-                                    <Input bgColor={'spikk-inner-page-bg'} variant='outline' placeholder='Enter lowest price estimate'></Input>   
+                                    <Input size={'lg'} bgColor={'spikk-inner-page-bg'} variant='outline' placeholder='Enter lowest price estimate'></Input>   
                                 </InputGroup>
                                 <InputGroup>
                                     <InputLeftElement
                                     pointerEvents='none'
                                     children={ <FaDollarSign color="gray"/>}
                                     />
-                                    <Input bgColor={'spikk-inner-page-bg'} variant='outline' placeholder='Enter highest price estimate'></Input>                             
+                                    <Input size={'lg'} bgColor={'spikk-inner-page-bg'} variant='outline' placeholder='Enter highest price estimate'></Input>                             
                                 </InputGroup>
                                 
                             </HStack>     
@@ -120,16 +120,17 @@ function BuyAnything2() {
                             
                         </Box>  
                         <Spacer/>
+                        <Flex>
+                            <Box p='1'>
+                                <Text color={'gray'}>
+                                    Summary
+                                </Text>
+                            </Box>
+                            <Spacer />
+                        </Flex>
                         
-                        <Box px={"10%"} borderRadius={"20px"} bgColor={"spikk-inner-header-bg"} py={'10'} mt={'4'} style={{'marginBottom': "40px"}}>
-                            <Flex>
-                                <Box p='1'>
-                                    <Text color={'gray'}>
-                                        Summary
-                                    </Text>
-                                </Box>
-                                <Spacer />
-                            </Flex>
+                        <Box px={"20%"} borderRadius={"20px"} bgColor={"spikk-inner-header-bg"} py={'10'} mt={'4'} style={{'marginBottom': "40px"}}>
+                            
                             <VStack>                   
                                 <TableContainer>
                                     <Table variant='simple' colorScheme={'whiteAlpha'}>
@@ -165,7 +166,7 @@ function BuyAnything2() {
                             </VStack>
                         </Box>  
                     </VStack>
-                    <VStack w={'full'} mx={5} bgColor={"spikk-inner-header-bg"} borderRadius={"20px"}>
+                    <VStack w={'container.md'}  mx={5} bgColor={"spikk-inner-header-bg"} borderRadius={"20px"}>
                         <Box borderRadius={"20px"} p={30}>
                             
                         </Box>  
