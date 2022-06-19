@@ -29,6 +29,9 @@ export const theme = extendTheme({
   },
   colors: {
     "spikk-header-bg" : "#0D0D26",
+    "spikk-inner-header-bg" : "#17173F",
+    "spikk-inner-page-bg" : "#030319",
+    "spikk-box-bg" : "#0A0A26",
     "spikk-white": "#F5F4FF",
     "spikk-orange": "#FBA819",
     "spikk-text1": "#2D2E48",
@@ -36,6 +39,8 @@ export const theme = extendTheme({
     "spikk-yellow": "#FFF59A",
     "spikk-dark-bg": "#030319",
     "spikk-white2": "#ECEAFF",
+    "spikk-gray": "#8685A4",
+    "spikk-light-gray": "#CCCBEC"
   },
   space: {
     14: "3.5rem",
