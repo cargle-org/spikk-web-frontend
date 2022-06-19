@@ -17,7 +17,7 @@ const LandingFooter = () => {
             <Box textAlign={{base: "center", md: "left"}}>
               <Box height={"24px"} display={"flex"} marginBottom={"32px"} alignItems={"flex-end"} justifyContent ={{base : "center" , md: "left" }}>
                 <Link to={"/"}>
-                  <Image src={require("../../assets/images/spikk-logo2.png")} height={"24px"} alt="Spikk Logo" />
+                  <Image src={require("../../assets/images/spikklogo.png")} height={"24px"} alt="Spikk Logo" />
                 </Link>
               </Box>
               <VStack spacing={"12px"} alignItems={{md: "flex-start"}} >
@@ -31,7 +31,7 @@ const LandingFooter = () => {
             </Box>
             <Box display={{base : "none" , md : "block"}}>
               <Box height={"24px"} display={"flex"} marginBottom={"32px"}>
-                <Text fontSize="xl" fontWeight={"bold"} color={"spikk-yellow"}>
+                <Text fontSize="xl" fontWeight={"bold"} color={"spikk-orange"}>
                   Quicklinks
                 </Text>
               </Box>
@@ -47,7 +47,7 @@ const LandingFooter = () => {
           </HStack>
           <Box textAlign={{base: "center", md: "left"}}>
             <Box height={"24px"} display={"flex"} marginBottom={{base : "20px" , md : "40px"}} >
-              <Text fontSize="xl" fontWeight={"bold"} color={"spikk-yellow"} w={"100%"}>
+              <Text fontSize="xl" fontWeight={"bold"} color={"spikk-orange"} w={"100%"}>
                 Get in touch with us
               </Text>
             </Box>
