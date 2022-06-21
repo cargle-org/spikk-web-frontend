@@ -36,8 +36,8 @@ const Homepage = () => {
                   </Text>
                 </Box>
                 <Flex gap={"6px"} marginBottom={"40px"} width={"100%"} justifyContent={{ base: "center", md: "left" }}>
-                  <Box height={"8px"} width={"36px"} borderRadius={"9999px"} bg={"spikk-yellow"}></Box>
-                  <Box height={"8px"} width={"8px"} borderRadius={"9999px"} bg={"spikk-yellow"}></Box>
+                  <Box height={"8px"} width={"36px"} borderRadius={"9999px"} bg={"spikk-orange"}></Box>
+                  <Box height={"8px"} width={"8px"} borderRadius={"9999px"} bg={"spikk-orange"}></Box>
                 </Flex>
                 <HStack marginBottom={"96px"} width={"100%"} justifyContent={{ base: "center", md: "left" }}>
                   <NavLink to={"/buy-anything"}>
