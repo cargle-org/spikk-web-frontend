@@ -1,18 +1,19 @@
 import { AddIcon } from "@chakra-ui/icons";
-import { Container, Box, Flex, HStack, Grid, VStack, Heading,Collapse, Text, Button, Progress, FormControl, Input,InputLeftElement, InputGroup, Spacer, Divider, Table, TableContainer, Th, Tr, Td, Thead, Tbody, Tfoot, TableCaption, InputAddon, Icon, useDisclosure } from "@chakra-ui/react";
+import { Container, Box, Flex, HStack, Grid, VStack, Heading,Collapse, Text, Button, Progress, FormControl, Input,InputLeftElement, InputGroup, Spacer, Divider, Table, TableContainer, Th, Tr, Td, Thead, Tbody, Tfoot, TableCaption, InputAddon, Icon, useDisclosure, Image, CloseButton } from "@chakra-ui/react";
 import { BsArrowBarDown, BsCart, BsImage } from "react-icons/bs";
 import { FaDollarSign } from "react-icons/fa";
-import { TbCurrencyNaira } from "react-icons/tb";
+import { TbCurrencyNaira, TbZoomCancel } from "react-icons/tb";
 import { FiChevronDown, FiChevronRight } from "react-icons/fi";
 import { SiAddthis } from "react-icons/si";
 import { BiAddToQueue } from "react-icons/bi";
+import { ImCross } from "react-icons/im";
 
 import { VscAdd } from "react-icons/vsc";
 import InnerHeader from "../../components/innerpages/InnerHeader";
 import InnerFooter from "../../components/landing/LandingFooter";
+import ShoppingGuidelines from "../../components/innerpages/ShoppingGuidelines";
 
 function BuyAnything2() {
-    const { isOpen, onToggle } = useDisclosure()
     return ( 
         
         <>
@@ -132,7 +133,7 @@ function BuyAnything2() {
                             <Spacer />
                         </Flex>
                         
-                        <Box px={"20%"} borderRadius={"20px"} bgColor={"spikk-inner-header-bg"} py={'10'} mt={'4'} style={{'marginBottom': "40px"}}>
+                        <Box px={"03%"} color={'spikk-gray'} borderRadius={"20px"} bgColor={"spikk-inner-header-bg"} py={'10'} mt={'4'} style={{'marginBottom': "40px"}}>
                             
                             <VStack>                   
                                 <TableContainer>
@@ -142,23 +143,48 @@ function BuyAnything2() {
                                             <Th>Image</Th>
                                             <Th>Item Name</Th>
                                             <Th isNumeric >Price Estimate</Th>
+                                            <Th></Th>
                                         </Tr>
                                         </Thead>
                                         <Tbody>
                                             <Tr>
-                                                <Td></Td>
-                                                <Td></Td>
-                                                <Td isNumeric></Td>
+                                                <Td>
+                                                    <Image src={require("../../assets/images/pringles.png")} height={"22px"} alt="item" />
+                                                </Td>
+                                                <Td>
+                                                    Pringles Sour Cream &  Onion Flavor 
+                                                </Td>
+                                                <Td isNumeric> N3900 - N4100</Td>
+                                                <Td color={'red'} >
+                                                     <CloseButton/>
+                                                </Td>
+
                                             </Tr>
                                             <Tr>
-                                                <Td></Td>
-                                                <Td></Td>
-                                                <Td isNumeric></Td>
+                                                <Td>
+                                                    <Image src={require("../../assets/images/pringles.png")} height={"22px"} alt="item" />
+                                                </Td>
+                                                <Td>
+                                                    Pringles Sour Cream &  Onion Flavor 
+                                                </Td>
+                                                <Td isNumeric> N3900 - N4100</Td>
+                                                <Td color={'red'} >
+                                                     <CloseButton/>
+                                                </Td>
+
                                             </Tr>
                                             <Tr>
-                                                <Td></Td>
-                                                <Td></Td>
-                                                <Td isNumeric></Td>
+                                                <Td>
+                                                    <Image src={require("../../assets/images/pringles.png")} height={"22px"} alt="item" />
+                                                </Td>
+                                                <Td>
+                                                    Pringles Sour Cream &  Onion Flavor 
+                                                </Td>
+                                                <Td isNumeric> N3900 - N4100</Td>
+                                                <Td color={'red'} >
+                                                     <CloseButton/>
+                                                </Td>
+
                                             </Tr>
                                         </Tbody>
                                         <Tfoot>
@@ -169,73 +195,7 @@ function BuyAnything2() {
                             </VStack>
                         </Box>  
                     </VStack>
-                    <VStack w={'container.md'}  mx={5}  borderRadius={"20px"}>
-                        
-                        <Box w={'full'} borderRadius={"20px"} bgColor={"spikk-box-bg"} px={"20%"} py={10}  >
-                            <HStack>
-                                <VStack>
-                                    <Icon as={BsCart} boxSize={14} color={'spikk-gray'} bgColor={'spikk-inner-header-bg'} p={3} />
-                                </VStack>
-                                <VStack>
-                                    <Text color={'spikk-gray'}>
-                                        Shop Anything
-                                    </Text>
-                                    <Heading as='h2' size='lg' color={'spikk-gray'}>
-                                    Shopping Guidelines
-                                    </Heading>
-                                    
-                                    
-                                </VStack>
-                                <VStack>
-                                    <Button onClick={onToggle} bgColor={'transparent'} _hover={{backgroundColor: 'transparent'}} _focus={{backgroundColor: 'spikk-gray'}} > <FiChevronDown  color="white"/> </Button>
-                                </VStack>
-                            </HStack>
-                            <HStack>
-                                <Collapse in={isOpen} animateOpacity>
-                                    <Box
-                                    color='spikk-light-gray'
-                                    mt='4'
-                                    bg='spikk-box-bg'
-                                    rounded='md'
-                                    shadow='md'
-                                    >
-                                    <Text>
-                                        <b>
-                                        Occasionally, the estimated price with the actual price of the product may differ.                                         
-                                        </b>
-                                        <br/><br/>
-
-                                        In cases where the total actual price is more than the estimate, the picker will contact you to ask if you’d still like to proceed with the purchase. 
-                                        <b>
-                                        <br/><br/>
-                                        If you do not want to proceed, your order will be cancelled or you can choose which of the order in the list should be cancelled.
-                                        </b>
-                                        <br/><br/>
-
-                                        If you accept the change, the picker will proceed to purchase the products. 
-
-                                    </Text>
-                                    </Box>
-                                </Collapse>
-                            </HStack>
-                            
-                            
-                            
-                        </Box> 
-                        <Box w={'full'} borderRadius={"20px"} bgColor={"spikk-box-bg"} px={"20%"} py={10}  >
-                            <Heading as={'h3'} size={'lg'} color={'spikk-yellow'}>
-                                Insert Ads here
-                            </Heading>
-                            <Text color={'spikk-gray'}>
-                                Lorem ipsum dolor sit amet, consectetur adi
-                                piscing elit, sed do eiusmod tempor incidid
-                                unt ut labore et dolore magna aliqua
-                            </Text>
-
-                            
-                            
-                        </Box> 
-                    </VStack>
+                    <ShoppingGuidelines/>
                 </Flex>
             </Container>
             <InnerFooter/>
