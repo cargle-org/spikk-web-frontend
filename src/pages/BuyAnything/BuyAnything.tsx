@@ -12,6 +12,7 @@ import { VscAdd } from "react-icons/vsc";
 import InnerHeader from "../../components/innerpages/InnerHeader";
 import InnerFooter from "../../components/landing/LandingFooter";
 import ShoppingGuidelines from "../../components/innerpages/ShoppingGuidelines";
+import { NavLink } from "react-router-dom";
 
 function BuyAnything2() {
     return ( 
@@ -102,24 +103,24 @@ function BuyAnything2() {
                                 </Box>
 
                                 <Spacer />
-
-                                <Box
-                                    display={"flex"}
-                                    gap={"4px"}
-                                    padding={"0 32px"}
-                                    height={"40px"}
-                                    borderRadius={"9999px"}
-                                    alignItems={"center"}
-                                    backgroundColor={"spikk-red"}
-                                    textTransform={"uppercase"}
-                                    fontWeight={"medium"}
-                                    color={"white"}
-                                    cursor={"pointer"}
-                                    fontSize={"md"}
-                                    >
-                                    NEXT <FiChevronRight size={"24px"} />
-                                </Box>
-
+                                <NavLink to={"/buy-anything-2"}>
+                                    <Box
+                                        display={"flex"}
+                                        gap={"4px"}
+                                        padding={"0 32px"}
+                                        height={"40px"}
+                                        borderRadius={"9999px"}
+                                        alignItems={"center"}
+                                        backgroundColor={"spikk-red"}
+                                        textTransform={"uppercase"}
+                                        fontWeight={"medium"}
+                                        color={"white"}
+                                        cursor={"pointer"}
+                                        fontSize={"md"}
+                                        >
+                                        NEXT <FiChevronRight size={"24px"} />
+                                    </Box>
+                                </NavLink>
                             </Flex>
                             
                         </Box>  

@@ -40,7 +40,8 @@ export const theme = extendTheme({
     "spikk-dark-bg": "#030319",
     "spikk-white2": "#ECEAFF",
     "spikk-gray": "#8685A4",
-    "spikk-light-gray": "#CCCBEC"
+    "spikk-light-gray": "#CCCBEC",
+    "spikk-gold": "#B9B27F"
   },
   space: {
     14: "3.5rem",

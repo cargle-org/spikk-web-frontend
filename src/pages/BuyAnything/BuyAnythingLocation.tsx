@@ -16,7 +16,7 @@ import InnerHeader from "../../components/innerpages/InnerHeader";
 import InnerFooter from "../../components/landing/LandingFooter";
 import ShoppingGuidelines from "../../components/innerpages/ShoppingGuidelines";
 
-function BuyAnything2Step2() {
+function BuyAnythingStep2() {
     return ( 
         <>
             <InnerHeader/>
@@ -139,4 +139,4 @@ function BuyAnything2Step2() {
      );
 }
 
-export default BuyAnything2Step2;
+export default BuyAnythingStep2;
