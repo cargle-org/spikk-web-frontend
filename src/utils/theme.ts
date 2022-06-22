@@ -24,8 +24,8 @@ export const theme = extendTheme({
   },
   breakpoints,
   fonts: {
-    heading: '"Gilroy", sans-serif',
-    body: '"Gilroy", sans-serif'
+    heading: 'Gilroy, sans-serif',
+    body: 'Gilroy, sans-serif'
   },
   colors: {
     "spikk-header-bg" : "#0D0D26",
@@ -41,7 +41,8 @@ export const theme = extendTheme({
     "spikk-white2": "#ECEAFF",
     "spikk-gray": "#8685A4",
     "spikk-light-gray": "#CCCBEC",
-    "spikk-gold": "#B9B27F"
+    "spikk-gold": "#B9B27F",
+    "spikk-red": "red"
   },
   space: {
     14: "3.5rem",

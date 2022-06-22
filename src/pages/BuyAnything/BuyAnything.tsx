@@ -47,7 +47,7 @@ function BuyAnything2() {
                                 </Box>
 
                             </Flex>
-                            <div style={{height: '10px', borderRadius:'3px', background: "linear-gradient(to right, #FFF59A 0%,#FFF59A 30%,#000000 30%,white 30%,white 100%)"}} >
+                            <div style={{height: '10px', borderRadius:'3px', background: "linear-gradient(to right, #FFF59A 0%,#FFF59A 30%,#000000 30%,rgba(255, 245, 154, 0.25) 30%,rgba(255, 245, 154, 0.25) 100%)"}} >
                                 
                             </div>
                             
@@ -86,7 +86,6 @@ function BuyAnything2() {
                                 
                             </HStack>     
                             <HStack>
-                                {/* <SiAddthis color="white" /> */}
                                 <BiAddToQueue width={20} color="gray"/>
                                 <Box p='1'>
                                     <Text color={'gray'}>

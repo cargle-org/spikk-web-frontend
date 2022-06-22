@@ -52,7 +52,7 @@ function BuyAnythingStep2() {
                                     </Box>
 
                                 </Flex>
-                                <div style={{height: '10px', borderRadius:'3px', background: "linear-gradient(to right, #FFF59A 0%,#FFF59A 67%,#000000 67%,white 67%,white 100%)"}} >
+                                <div style={{height: '10px', borderRadius:'3px', background: "linear-gradient(to right, #FFF59A 0%,#FFF59A 67%,#000000 67%,rgba(255, 245, 154, 0.25) 67%,rgba(255, 245, 154, 0.25) 100%)"}} >
                                 
                                 </div>
                                 

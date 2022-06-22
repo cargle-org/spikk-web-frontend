@@ -17,6 +17,7 @@ import { VscAdd } from "react-icons/vsc";
 import InnerHeader from "../../components/innerpages/InnerHeader";
 import InnerFooter from "../../components/landing/LandingFooter";
 import ShoppingGuidelines from "../../components/innerpages/ShoppingGuidelines";
+import { NavLink } from "react-router-dom";
 
 function BuyAnything3() {
     return ( 
@@ -139,11 +140,14 @@ function BuyAnything3() {
                              
                         <Divider/>                       
                         <Flex my={10} py={10} w={'80%'}>
-                            <Box p='2'>
-                                <Text color={'gray'}>
-                                    BACK
-                                </Text>
-                            </Box>
+                            <NavLink to={"/buy-anything-location"}>
+
+                                <Box p='2'>
+                                    <Text color={'gray'}>
+                                        BACK
+                                    </Text>
+                                </Box>
+                            </NavLink>
 
                             <Spacer />
                             <Spacer />
