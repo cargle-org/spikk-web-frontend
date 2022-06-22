@@ -47,8 +47,11 @@ function BuyAnything2() {
                                 </Box>
 
                             </Flex>
+                            <div style={{height: '10px', borderRadius:'3px', background: "linear-gradient(to right, #FFF59A 0%,#FFF59A 30%,#000000 30%,white 30%,white 100%)"}} >
+                                
+                            </div>
                             
-                            <Progress borderRadius={4} colorScheme={'yellow'} style={{backgroundColor: "rgb(255,254,224)"}} size='md' color={'spikk-yellow'} value={30} />
+                            {/* <Progress borderRadius={4} colorScheme={'yellow'} style={{backgroundColor: "rgb(255,254,224)"}} size='md' color={'spikk-yellow'} value={30} /> */}
                             <HStack py={4}>
                                 <InputGroup>
                                     <InputLeftElement
@@ -103,7 +106,7 @@ function BuyAnything2() {
                                 </Box>
 
                                 <Spacer />
-                                <NavLink to={"/buy-anything-2"}>
+                                <NavLink to={"/buy-anything-location"}>
                                     <Box
                                         display={"flex"}
                                         gap={"4px"}

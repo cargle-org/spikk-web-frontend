@@ -15,6 +15,7 @@ import { VscAdd } from "react-icons/vsc";
 import InnerHeader from "../../components/innerpages/InnerHeader";
 import InnerFooter from "../../components/landing/LandingFooter";
 import ShoppingGuidelines from "../../components/innerpages/ShoppingGuidelines";
+import { NavLink } from "react-router-dom";
 
 function BuyAnythingStep2() {
     return ( 
@@ -51,8 +52,11 @@ function BuyAnythingStep2() {
                                     </Box>
 
                                 </Flex>
+                                <div style={{height: '10px', borderRadius:'3px', background: "linear-gradient(to right, #FFF59A 0%,#FFF59A 67%,#000000 67%,white 67%,white 100%)"}} >
                                 
-                                <Progress borderRadius={4} colorScheme={'yellow'} style={{backgroundColor: "rgb(255,254,224)"}} size='md' color={'spikk-yellow'} value={67} />
+                                </div>
+                                
+                                {/* <Progress borderRadius={4} colorScheme={'yellow'} style={{backgroundColor: "rgb(255,254,224)"}} size='md' color={'spikk-yellow'} value={67} /> */}
                                 <HStack py={4}>
                                     <InputGroup>
                                         <InputLeftElement
@@ -98,30 +102,34 @@ function BuyAnythingStep2() {
                              
                         <Divider/>                       
                         <Flex my={10} py={10} w={'80%'}>
-                            <Box p='2'>
-                                <Text color={'gray'}>
-                                    BACK
-                                </Text>
-                            </Box>
+                            <NavLink to={"/buy-anything"}>
+
+                                <Box p='2'>
+                                    <Text color={'gray'}>
+                                        BACK
+                                    </Text>
+                                </Box>
+                            </NavLink>
 
                             <Spacer />
-
-                            <Box
-                                display={"flex"}
-                                gap={"4px"}
-                                padding={"0 32px"}
-                                height={"40px"}
-                                borderRadius={"9999px"}
-                                alignItems={"center"}
-                                backgroundColor={"spikk-red"}
-                                textTransform={"uppercase"}
-                                fontWeight={"medium"}
-                                color={"white"}
-                                cursor={"pointer"}
-                                fontSize={"md"}
-                                >
-                                SEE SUMMARY <FiChevronRight size={"24px"} />
-                            </Box>
+                            <NavLink to={"/buy-anything-order-summary"}>
+                                <Box
+                                    display={"flex"}
+                                    gap={"4px"}
+                                    padding={"0 32px"}
+                                    height={"40px"}
+                                    borderRadius={"9999px"}
+                                    alignItems={"center"}
+                                    backgroundColor={"spikk-red"}
+                                    textTransform={"uppercase"}
+                                    fontWeight={"medium"}
+                                    color={"white"}
+                                    cursor={"pointer"}
+                                    fontSize={"md"}
+                                    >
+                                    SEE SUMMARY <FiChevronRight size={"24px"} />
+                                </Box>
+                            </NavLink>
 
                         </Flex>
                             
