@@ -1,11 +1,11 @@
 import { AddIcon } from "@chakra-ui/icons";
-import { Container, Box, Flex, HStack, Grid, VStack, Heading,Collapse, Text, Button, Progress, FormControl, Input,InputLeftElement, InputGroup, Spacer, Divider, Table, TableContainer, Th, Tr, Td, Thead, Tbody, Tfoot, TableCaption, InputAddon, Icon, useDisclosure, Image, CloseButton, Center } from "@chakra-ui/react";
-import { BsArrowBarDown, BsCart, BsImage } from "react-icons/bs";
+import { Container, Box, Flex, HStack, Grid, VStack, Heading,Collapse, Text, Button, Progress, FormControl, Input,InputLeftElement, InputGroup, Spacer, Divider, Table, TableContainer, Th, Tr, Td, Thead, Tbody, Tfoot, TableCaption, InputAddon, Icon, useDisclosure, Image, CloseButton, Center, Checkbox } from "@chakra-ui/react";
+import { BsArrowBarDown, BsBoxArrowDownLeft, BsCart, BsImage } from "react-icons/bs";
 import { FaDollarSign, FaEquals } from "react-icons/fa";
 import { TbCurrencyNaira, TbZoomCancel } from "react-icons/tb";
 import { FiChevronDown, FiChevronRight } from "react-icons/fi";
 import { SiAddthis } from "react-icons/si";
-import { BiAddToQueue } from "react-icons/bi";
+import { BiAddToQueue, BiWallet } from "react-icons/bi";
 import { ImCross } from "react-icons/im";
 import { MdStickyNote2 } from "react-icons/md";
 import { TbFlag3 } from "react-icons/tb";
@@ -58,12 +58,17 @@ function BuyAnything3() {
                             </Box>
                             
                             
-                            <Flex gap={"15px"} py={8} color={'white'} marginBottom={"40px"} width={"100%"} justifyContent={{ base: "center", md: "left" }}>
-                                <Box p={10}>
+                            <Flex py={1} color={'white'} marginBottom={"40px"} width={"100%"} justifyContent={{ base: "center", md: "left" }}>
+                                <Box p={5}>
                                     <Box color={'spikk-gold'}>
-                                       <MdStickyNote2 color={'spikk-gold'}></MdStickyNote2> Items
+                                        <Flex>
+                                            <Center>
+                                                <MdStickyNote2 color={'spikk-gold'}></MdStickyNote2> 
+                                            </Center>
+                                            <Text px={5}>Items</Text>
+                                        </Flex>
                                     </Box>
-                                    <HStack>
+                                    <HStack fontSize={'13px'}>
                                         <Image src={require("../../assets/images/pringles.png")} height={"25px"} alt="item" />
                                         <Text>
                                             Pringles Sour Cream &  Onion Flavor 
@@ -72,7 +77,7 @@ function BuyAnything3() {
                                             N3900 - N4100
                                         </Text>
                                     </HStack>
-                                    <HStack>
+                                    <HStack fontSize={'13px'}>
                                         <Image src={require("../../assets/images/pringles.png")} height={"25px"} alt="item" />
                                         <Text>
                                             Pringles Sour Cream &  Onion Flavor 
@@ -81,10 +86,10 @@ function BuyAnything3() {
                                             N3900 - N4100
                                         </Text>
                                     </HStack>
-                                    <Divider py={5} color={'gray'}/>
+                                    <Divider py={5} color={'spikk-light-gold'}/>
                                     <HStack py={5}>
                                         <Icon as={RiEBike2Line} borderRadius={5} boxSize={10} color={'black'} bgColor={'white'} p={3} />                                        
-                                        <Text>
+                                        <Text fontSize={'13px'}>
                                             Delivery Price
                                         </Text>
                                         <Spacer/>
@@ -99,38 +104,108 @@ function BuyAnything3() {
                                             Total
                                         </Text>
                                         <Spacer/>
-                                        <Text>
+                                        <Text fontSize={'20px'}>
                                            <b>N9700</b> 
                                         </Text>
                                     </HStack>
 
                                 </Box>
-                                <Center height='auto'>
-                                    <Divider orientation='vertical' />
+                                <Center my={10} height='auto'>
+                                    <Divider bgColor={'spikk-light-gold'} color={'spikk-light-gold'} orientation='vertical' />
                                 </Center>           
-                                <Box>
+                                <Box p={5}>
+                                    <Box color={'spikk-gold'}>
+                                        <Flex>
+                                            <Center>
+                                                <HiOutlineLocationMarker color={'spikk-gold'}></HiOutlineLocationMarker> 
+                                            </Center>
+                                            <Text px={5}>Locations</Text>
+                                        </Flex>
+                                    </Box>
 
-                                    <Text color={'spikk-gold'}>
-                                        <HiOutlineLocationMarker color={'spikk-gold'}/> Locations
-                                    </Text>
-                                    <Text>
-                                        Shopping Location(s)
-                                    </Text>
-                                    <Text>
-                                        Shoprite, Jakande, Lekki  & Hubmart, Lekki
-                                    </Text>
-                                    <Box py={8}>
-                                        <Text color={'spikk-gold'}>
-                                            <BiCommentDetail color={'spikk-gold'}/> Comment
-                                        </Text>
+                                    <Box fontSize={'13px'} py={3}>
+                                        <Heading as='h4' size='xs' color={'spikk-light-gold'}>
+                                            Shopping Location(s)
+                                        </Heading>
                                         <Text>
+                                            Shoprite, Jakande, Lekki  & Hubmart, Lekki
+                                        </Text>
+                                    </Box>
+
+                                    <Box fontSize={'13px'}>
+                                        <Heading as='h4' size='xs' color={'spikk-light-gold'}>
+                                            Delivery Location
+                                        </Heading>
+                                        <Text>
+                                            17 Admiralty Lekki
+                                        </Text>
+                                    </Box>
+                                    
+                                    
+                                    <Box py={8}>
+                                        <Flex color={'spikk-gold'}>
+                                            <Center>
+                                                <BiCommentDetail color={'spikk-gold'}/>
+                                            </Center>
+                                            <Text px={5}>Comment</Text>
+                                        </Flex>
+                                        <Text fontSize={'13px'}>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
                                         </Text>
- 
                                     </Box>
                                                                            
                                 </Box>
                             </Flex>
+                            <Flex  bg='spikk-inner-page-bg' p={1} alignContent={'left'}>
+                                <Box>
+                                    <Flex>
+                                        <Box p={5}>
+                                            <Icon as={BiWallet} borderRadius={5} boxSize={10} color={'spikk-gold'} bgColor={'spikk-inner-header-bg'} p={3} />      
+                                        </Box>
+                                        <Spacer/>
+                                        <Box p={5} alignItems={'left'}>
+                                            <Text  color={'spikk-gold'}>
+                                                Pay with Wallet
+                                            </Text>    
+                                            <Text color={'spikk-light-gray'} textAlign={'left'} >
+                                                1007832738 ABC Bank PLC
+                                            </Text>
+                                            <Text color={'spikk-light-gray'} textAlign={'left'}>
+                                                Jennele Sanya
+                                            </Text>
+                                        </Box>
+                                        <Spacer/>
+                                        <Box p={5}>
+                                            <Checkbox size='lg' colorScheme='red' defaultChecked/>
+                                        </Box>
+                                    </Flex>
+                                </Box>
+                                <Spacer/>
+
+                                <Box>
+                                    <Flex>
+                                        <Box p={5}>
+                                            <Icon as={BiWallet} borderRadius={5} boxSize={10} color={'spikk-gold'} bgColor={'spikk-inner-header-bg'} p={3} />      
+                                        </Box>
+                                        <Spacer/>
+                                        <Box p={5} alignItems={'left'}>
+                                            <Text color={'spikk-gold'}>
+                                                Pay with Cash
+                                            </Text>    
+                                            <Text color={'spikk-light-gray'} textAlign={'left'} >
+                                                Pay cash when the picker delivers
+                                            </Text>
+                                            
+                                        </Box>
+                                        <Spacer/>
+                                        <Box p={5}>
+                                            <Checkbox size='lg' colorScheme='red' defaultChecked/>
+                                        </Box>
+                                    </Flex>
+                                </Box>
+
+                            </Flex>
+                            
 
 
                             
@@ -138,18 +213,18 @@ function BuyAnything3() {
 
                            
                              
-                        <Divider/>                       
-                        <Flex my={10} py={10} w={'80%'}>
-                            <NavLink to={"/buy-anything-location"}>
+                        <Flex pb={6}>
+                            
 
-                                <Box p='2'>
+                            <Box py='2'>
+                                <NavLink to={"/buy-anything-location"}>
                                     <Text color={'gray'}>
                                         BACK
                                     </Text>
-                                </Box>
-                            </NavLink>
+                                </NavLink>
+                            </Box>
+                            
 
-                            <Spacer />
                             <Spacer />
                             <Spacer />
 
@@ -157,6 +232,7 @@ function BuyAnything3() {
                                 display={"flex"}
                                 gap={"4px"}
                                 padding={"0 32px"}
+                                mx={3}
                                 height={"40px"}
                                 borderRadius={"9999px"}
                                 border={"solid"}
@@ -168,12 +244,12 @@ function BuyAnything3() {
                                 fontWeight={"medium"}
                                 color={"white"}
                                 cursor={"pointer"}
-                                fontSize={"md"}
+                                fontSize={"sm"}
                                 >
                                 SAVE REQUEST <FiChevronRight size={"24px"} />
                             </Box>
                             <Spacer />
-
+                            <Spacer />
                             <Box
                                 display={"flex"}
                                 gap={"4px"}
@@ -186,7 +262,7 @@ function BuyAnything3() {
                                 fontWeight={"medium"}
                                 color={"white"}
                                 cursor={"pointer"}
-                                fontSize={"md"}
+                                fontSize={"sm"}
                                 >
                                 MAKE REQUEST <FiChevronRight size={"24px"} />
                             </Box>

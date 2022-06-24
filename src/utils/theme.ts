@@ -42,7 +42,7 @@ export const theme = extendTheme({
     "spikk-gray": "#8685A4",
     "spikk-light-gray": "#CCCBEC",
     "spikk-gold": "#B9B27F",
-    "spikk-red": "red"
+    "spikk-light-gold": "#ABABAB",    
   },
   space: {
     14: "3.5rem",
