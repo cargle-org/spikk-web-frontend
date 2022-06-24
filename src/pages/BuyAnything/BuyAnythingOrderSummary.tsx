@@ -18,8 +18,11 @@ import InnerHeader from "../../components/innerpages/InnerHeader";
 import InnerFooter from "../../components/landing/LandingFooter";
 import ShoppingGuidelines from "../../components/innerpages/ShoppingGuidelines";
 import { NavLink } from "react-router-dom";
+import RegisterPopup from "../../components/RegisterPopup";
+
 
 function BuyAnything3() {
+
     return ( 
         
         <>
@@ -265,7 +268,9 @@ function BuyAnything3() {
                                 fontSize={"sm"}
                                 >
                                 MAKE REQUEST <FiChevronRight size={"24px"} />
+
                             </Box>
+                            
 
                         </Flex>
                             
@@ -273,11 +278,13 @@ function BuyAnything3() {
                         
                     
                     </VStack>
+                    <RegisterPopup/>
                     
                     <ShoppingGuidelines/>
 
                 </Flex>
             </Container>
+            
             <InnerFooter/>
         </>
      );

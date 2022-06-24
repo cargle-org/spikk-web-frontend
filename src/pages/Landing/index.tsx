@@ -5,6 +5,7 @@ const About = React.lazy(() => import('../About/About'))
 const BuyAnything = React.lazy(() => import('../BuyAnything/BuyAnything')) 
 const BuyAnythingStep2 = React.lazy(() => import('../BuyAnything/BuyAnythingLocation')) 
 const BuyAnythingStep3 = React.lazy(() => import('../BuyAnything/BuyAnythingOrderSummary')) 
+const AvailablePickers = React.lazy(() => import('../BuyAnything/AvailablePickers')) 
 
 const LandingRoutes = () => {
   return (
@@ -15,7 +16,7 @@ const LandingRoutes = () => {
             <Route path='/buy-anything' element = {<BuyAnything/>} />
             <Route path='/buy-anything-location' element = {<BuyAnythingStep2/>} />
             <Route path='/buy-anything-order-summary' element = {<BuyAnythingStep3/>} />
-
+            <Route path='/buy-anything-available-pickers' element = {<AvailablePickers/>} />
         </Routes>
     </>
   )
