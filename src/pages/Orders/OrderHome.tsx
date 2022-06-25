@@ -1,4 +1,4 @@
-import { Container, Box, Flex, HStack, Grid, VStack, Heading,Collapse, Text, Button, Progress, FormControl, Input,InputLeftElement, InputGroup, Spacer, Divider, Table, TableContainer, Th, Tr, Td, Thead, Tbody, Tfoot, TableCaption, InputAddon, Icon, useDisclosure, Image, CloseButton, Avatar, AvatarBadge, Badge, Center, Circle } from "@chakra-ui/react";
+import { Container, Box, Flex, HStack, Grid, VStack, TabList,Tabs, Tab, TabPanel, TabPanels,  Heading,Collapse, Text, Button, Progress, FormControl, Input,InputLeftElement, InputGroup, Spacer, Divider, Table, TableContainer, Th, Tr, Td, Thead, Tbody, Tfoot, TableCaption, InputAddon, Icon, useDisclosure, Image, CloseButton, Avatar, AvatarBadge, Badge, Center, Circle } from "@chakra-ui/react";
 import InnerHeader from "../../components/innerpages/InnerHeader";
 import InnerFooter from "../../components/landing/LandingFooter";
 import { NavLink } from "react-router-dom";
@@ -62,29 +62,92 @@ function OrderHome() {
                                 </Text>
                             </HStack>
                             <Divider borderColor={'gray'} />
-                            <HStack p={5} fontSize={'13px'}>
-                                <Image src={require("../../assets/images/pringles.png")} height={"25px"} alt="item" />
-                                <Spacer/>
-                                <Text>
-                                    You ordered Bread and Pringles 
-                                </Text>
-                                <Spacer/>
-                                <Text>
-                                    10th June
-                                </Text>
-                            </HStack>
-                            <Divider borderColor={'gray'} />
-                            <HStack p={5} fontSize={'13px'}>
-                                <Image src={require("../../assets/images/pringles.png")} height={"25px"} alt="item" />
-                                <Spacer/>
-                                <Text>
-                                    You ordered Bread and Pringles 
-                                </Text>
-                                <Spacer/>
-                                <Text>
-                                    10th June
-                                </Text>
-                            </HStack>
+                            <Box w={'100%'} borderRadius={"20px"} p={4} bgColor={"spikk-inner-header-bg"}>
+                                <Tabs variant='soft-rounded' colorScheme='yellow'>
+                                    <TabList px={3}>
+                                        <Tab>Completed Orders</Tab>
+                                        <Tab>Saved Orders</Tab>
+                                    </TabList>
+                                    <TabPanels>
+                                        <TabPanel>
+                                            <HStack p={5} fontSize={'13px'}>
+                                                <Image src={require("../../assets/images/pringles.png")} height={"25px"} alt="item" />
+                                                <Spacer/>
+                                                <Text>
+                                                    You ordered Bread and Pringles 
+                                                </Text>
+                                                <Spacer/>
+                                                <Text>
+                                                    10th June
+                                                </Text>
+                                            </HStack>
+                                            <Divider borderColor={'gray'} />
+                                            <HStack p={5} fontSize={'13px'}>
+                                                <Image src={require("../../assets/images/pringles.png")} height={"25px"} alt="item" />
+                                                <Spacer/>
+                                                <Text>
+                                                    You ordered Bread and Pringles 
+                                                </Text>
+                                                <Spacer/>
+                                                <Text>
+                                                    10th June
+                                                </Text>
+                                            </HStack>
+                                            <Divider borderColor={'gray'} />
+                                            <HStack p={5} fontSize={'13px'}>
+                                                <Image src={require("../../assets/images/pringles.png")} height={"25px"} alt="item" />
+                                                <Spacer/>
+                                                <Text>
+                                                    You ordered Bread and Pringles 
+                                                </Text>
+                                                <Spacer/>
+                                                <Text>
+                                                    10th June
+                                                </Text>
+                                            </HStack>
+                                            <Divider borderColor={'gray'} />
+                                            <HStack p={5} fontSize={'13px'}>
+                                                <Image src={require("../../assets/images/pringles.png")} height={"25px"} alt="item" />
+                                                <Spacer/>
+                                                <Text>
+                                                    You ordered Bread and Pringles 
+                                                </Text>
+                                                <Spacer/>
+                                                <Text>
+                                                    10th June
+                                                </Text>
+                                            </HStack>
+                                        </TabPanel>
+                                        <TabPanel>
+                                            <HStack p={5} fontSize={'13px'}>
+                                                <Image src={require("../../assets/images/pringles.png")} height={"25px"} alt="item" />
+                                                <Spacer/>
+                                                <Text>
+                                                    You ordered Bread and Pringles 
+                                                </Text>
+                                                <Spacer/>
+                                                <Text>
+                                                    10th June
+                                                </Text>
+                                            </HStack>
+                                            <Divider borderColor={'gray'} />
+                                            <HStack p={5} fontSize={'13px'}>
+                                                <Image src={require("../../assets/images/pringles.png")} height={"25px"} alt="item" />
+                                                <Spacer/>
+                                                <Text>
+                                                    You ordered Bread and Pringles 
+                                                </Text>
+                                                <Spacer/>
+                                                <Text>
+                                                    10th June
+                                                </Text>
+                                            </HStack>
+                                        </TabPanel>
+                                    </TabPanels>
+                                </Tabs>
+                            </Box>
+                            
+                            
                             <Divider/>
                             
                             <VStack>

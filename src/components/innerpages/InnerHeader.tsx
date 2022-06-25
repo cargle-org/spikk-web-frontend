@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Image, Box, Button, Spacer, Flex, VStack, Divider, Text, Icon } from "@chakra-ui/react";
+import { Image, TabList,Tabs, Tab, Box, Button, Spacer, Flex, VStack, Divider, Text, Icon } from "@chakra-ui/react";
 import { FiChevronDown, FiArrowUpRight, FiChevronLeft, FiHome, FiBell } from "react-icons/fi";
 import { FaBeer, FaBell, FaCartPlus, FaHome } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
@@ -100,13 +100,27 @@ function InnerHeader() {
                                 <FiChevronLeft></FiChevronLeft>
                                 Home
                             </div>
-                </NavLink>            
+                </NavLink>           
+                <Tabs variant='soft-rounded' colorScheme='gray'>
+                    <TabList>
+                        <NavLink to={"/buy-anything"}>
+                            <Tab>
+                                Buy Anything
+                            </Tab>
+                        </NavLink>
+                        <Tab>
+                            <NavLink to={""}>
+                                Send Anything
+                            </NavLink>
+                        </Tab>
+                    </TabList>
+                </Tabs> 
                 <Box as="nav" height={"72px"} display={"flex"} alignItems={"center"}>
                     <Box as="ul" display={"flex"} gap={"40px"} marginRight={"40px"}>
                         <NavLink to={"/"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
                             <div className="header-link"> <VscHome/> &nbsp; &nbsp; Home</div>
                         </NavLink>
-                        <NavLink to={"/about"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
+                        <NavLink to={"/orders"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
                             <div className="header-link"> <BsCart/> &nbsp; &nbsp; Orders</div>
                         </NavLink>
                         <NavLink to={"/about"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
