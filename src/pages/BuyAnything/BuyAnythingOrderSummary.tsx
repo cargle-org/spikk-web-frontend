@@ -253,23 +253,25 @@ function BuyAnything3() {
                             </Box>
                             <Spacer />
                             <Spacer />
-                            <Box
-                                display={"flex"}
-                                gap={"4px"}
-                                padding={"0 32px"}
-                                height={"40px"}
-                                borderRadius={"9999px"}
-                                alignItems={"center"}
-                                backgroundColor={"spikk-red"}
-                                textTransform={"uppercase"}
-                                fontWeight={"medium"}
-                                color={"white"}
-                                cursor={"pointer"}
-                                fontSize={"sm"}
-                                >
-                                MAKE REQUEST <FiChevronRight size={"24px"} />
+                            <NavLink to={"/buy-anything-available-pickers"}>
+                                <Box
+                                    display={"flex"}
+                                    gap={"4px"}
+                                    padding={"0 32px"}
+                                    height={"40px"}
+                                    borderRadius={"9999px"}
+                                    alignItems={"center"}
+                                    backgroundColor={"spikk-red"}
+                                    textTransform={"uppercase"}
+                                    fontWeight={"medium"}
+                                    color={"white"}
+                                    cursor={"pointer"}
+                                    fontSize={"sm"}
+                                    >
+                                    MAKE REQUEST <FiChevronRight size={"24px"} />
 
-                            </Box>
+                                </Box>
+                            </NavLink>
                             
 
                         </Flex>

@@ -23,44 +23,59 @@ function AvailablePickers() {
                             
                         <Box w={'full'} borderRadius={"20px"} bgColor={"spikk-inner-page-bg"} px={"5%"} pt={4} pb={14} borderWidth={'1px'} borderColor={'gray'} >
                             <Box borderRadius={"20px"} px={3} py={7} color={'spikk-light-gray'}  >
-                                <Flex borderRadius={"20px"} my={4} bgColor={"spikk-inner-header-bg"}  borderWidth={'1px'} borderColor={'gray'}>
+                                <Flex borderRadius={"20px"} my={4} p={3} bgColor={"spikk-inner-header-bg"}  borderWidth={'1px'} borderColor={'gray'}>
                                     <Box pt={2}>
                                         <Avatar  mr={3} name='Dan Abrahmov' src='https://bit.ly/dan-abramov' />
                                     </Box>
                                     <Box>
-                                        <Heading as='h4' pt={5} textAlign={'left'} size='sm' color={'spikk-light-gray'}>
+                                        <Heading as='h4' pt={3} textAlign={'left'} size='sm' color={'white'}>
                                             Wale Adebayo
                                         </Heading>
-                                        <Text fontSize={13} color={'spikk-gray'}>
+                                        <Text fontSize={13} color={'white'}>
                                             Picker
                                         </Text>
                                     </Box>
+                                    <Spacer/>
+                                    <Box pt={3} mr={4}>
+                                        <Image src={require("../../assets/images/smallbike.png")}/>
+                                    </Box>
+
                                 </Flex>
-                                <Flex borderRadius={"20px"} my={4} bgColor={"spikk-inner-header-bg"} borderWidth={'1px'} borderColor={'gray'}>
+                                <Flex borderRadius={"20px"} my={4} p={3} bgColor={"spikk-inner-header-bg"}  borderWidth={'1px'} borderColor={'gray'}>
                                     <Box pt={2}>
                                         <Avatar  mr={3} name='Dan Abrahmov' src='https://bit.ly/dan-abramov' />
                                     </Box>
                                     <Box>
-                                        <Heading as='h4' pt={5}  size='sm' color={'spikk-light-gray'}>
+                                        <Heading as='h4' pt={3} textAlign={'left'} size='sm' color={'white'}>
                                             Wale Adebayo
                                         </Heading>
-                                        <Text fontSize={13} color={'spikk-gray'}>
+                                        <Text fontSize={13} color={'white'}>
                                             Picker
                                         </Text>
                                     </Box>
+                                    <Spacer/>
+                                    <Box pt={3} mr={4}>
+                                        <Image src={require("../../assets/images/smallbike.png")}/>
+                                    </Box>
+
                                 </Flex>
-                                <Flex borderRadius={"20px"} my={4} bgColor={"spikk-inner-header-bg"} borderWidth={'1px'} borderColor={'gray'}>
+                                <Flex borderRadius={"20px"} my={4} p={3} bgColor={"spikk-inner-header-bg"}  borderWidth={'1px'} borderColor={'gray'}>
                                     <Box pt={2}>
                                         <Avatar  mr={3} name='Dan Abrahmov' src='https://bit.ly/dan-abramov' />
                                     </Box>
                                     <Box>
-                                        <Heading as='h4' pt={5}  size='sm' color={'spikk-light-gray'}>
+                                        <Heading as='h4' pt={3} textAlign={'left'} size='sm' color={'white'}>
                                             Wale Adebayo
                                         </Heading>
-                                        <Text fontSize={13} color={'spikk-gray'}>
+                                        <Text fontSize={13} color={'white'}>
                                             Picker
                                         </Text>
                                     </Box>
+                                    <Spacer/>
+                                    <Box pt={3} mr={4}>
+                                        <Image src={require("../../assets/images/smallbike.png")}/>
+                                    </Box>
+
                                 </Flex>
                                 
                                 
