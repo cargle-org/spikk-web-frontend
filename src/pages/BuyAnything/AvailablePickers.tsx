@@ -12,7 +12,7 @@ function AvailablePickers() {
                 
                 <Flex px={100} py={50} align={'left'} flexDirection={{base: 'column-reverse', xs: 'column-reverse', sm: 'column-reverse', md: 'row', lg: 'row'}}>
                     
-                    <VStack bg={`url(${require("../../assets/images/map.png")})`} bgPosition="center" bgRepeat="no-repeat" w={'container.xl'} p={0} maxW={'1000'} bgColor={"spikk-inner-header-bg"} borderRadius={"20px"} >
+                    <VStack bg={`url(${require("../../assets/images/map.png")})`} bgPosition="center" bgRepeat="no-repeat" w={'container.xs'} p={0} maxW={'1000'} bgColor={"spikk-inner-header-bg"} borderRadius={"20px"} >
                     </VStack>
                     
                     <VStack w={'container.md'}  mx={5}  borderRadius={"20px"} borderTopRadius={"20px"} bgColor={"spikk-inner-header-bg"} borderWidth={'1px'} borderColor={'gray'}>
