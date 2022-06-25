@@ -46,46 +46,48 @@ function AvailablePickers() {
                                 </NavLink>
                                 
                                 
-                                <Flex borderRadius={"20px"} my={4} p={3} bgColor={"spikk-inner-header-bg"}  borderWidth={'1px'} borderColor={'gray'}>
-                                    <Box pt={2}>
-                                        <Avatar  mr={3} name='samp' src='https://bit.ly/dan-abramov'>
-                                            <AvatarBadge boxSize='1.5em' bgColor='white' color='black' fontSize={10} w={8}>4.0*</AvatarBadge>
-                                        </Avatar>
-                                    </Box>
-                                    <Box>
-                                        <Heading as='h4' pt={3} textAlign={'left'} size='sm' color={'white'}>
-                                            Wale Adebayo
-                                        </Heading>
-                                        <Text fontSize={13} color={'white'}>
-                                            Picker
-                                        </Text>
-                                    </Box>
-                                    <Spacer/>
-                                    <Box pt={3} mr={4}>
-                                        <Image src={require("../../assets/images/smallbike.png")}/>
-                                    </Box>
-
-                                </Flex>
-                                <Flex borderRadius={"20px"} my={4} p={3} bgColor={"spikk-inner-header-bg"}  borderWidth={'1px'} borderColor={'gray'}>
-                                    <Box pt={2}>
-                                        <Avatar  mr={3} name='samp' src='https://bit.ly/dan-abramov'>
-                                            <AvatarBadge boxSize='1.5em' bgColor='white' color='black' fontSize={10} w={8}>4.0*</AvatarBadge>
-                                        </Avatar>
-                                    </Box>
-                                    <Box>
-                                        <Heading as='h4' pt={3} textAlign={'left'} size='sm' color={'white'}>
-                                            Wale Adebayo
-                                        </Heading>
-                                        <Text fontSize={13} color={'white'}>
-                                            Picker
-                                        </Text>
-                                    </Box>
-                                    <Spacer/>
-                                    <Box pt={3} mr={4}>
-                                        <Image src={require("../../assets/images/smallbike.png")}/>
-                                    </Box>
-
-                                </Flex>
+                                <NavLink to='/buy-anything-picker-selected'>
+                                    <Flex borderRadius={"20px"} my={4} p={3} bgColor={"spikk-inner-header-bg"}  borderWidth={'1px'} borderColor={'gray'}>
+                                        <Box pt={2}>
+                                            <Avatar  mr={3} name='samp' src='https://bit.ly/dan-abramov'>
+                                                <AvatarBadge boxSize='1.5em' bgColor='white' color='black' fontSize={10} w={8}>4.0*</AvatarBadge>
+                                            </Avatar>
+                                        </Box>
+                                        <Box>
+                                            <Heading as='h4' pt={3} textAlign={'left'} size='sm' color={'white'}>
+                                                Wale Adebayo
+                                            </Heading>
+                                            <Text fontSize={13} color={'white'}>
+                                                Picker
+                                            </Text>
+                                        </Box>
+                                        <Spacer/>
+                                        <Box pt={3} mr={4}>
+                                            <Image src={require("../../assets/images/smallbike.png")}/>
+                                        </Box>
+                                    </Flex>                                
+                                </NavLink>
+                                <NavLink to='/buy-anything-picker-selected'>
+                                    <Flex borderRadius={"20px"} my={4} p={3} bgColor={"spikk-inner-header-bg"}  borderWidth={'1px'} borderColor={'gray'}>
+                                        <Box pt={2}>
+                                            <Avatar  mr={3} name='samp' src='https://bit.ly/dan-abramov'>
+                                                <AvatarBadge boxSize='1.5em' bgColor='white' color='black' fontSize={10} w={8}>4.0*</AvatarBadge>
+                                            </Avatar>
+                                        </Box>
+                                        <Box>
+                                            <Heading as='h4' pt={3} textAlign={'left'} size='sm' color={'white'}>
+                                                Wale Adebayo
+                                            </Heading>
+                                            <Text fontSize={13} color={'white'}>
+                                                Picker
+                                            </Text>
+                                        </Box>
+                                        <Spacer/>
+                                        <Box pt={3} mr={4}>
+                                            <Image src={require("../../assets/images/smallbike.png")}/>
+                                        </Box>
+                                    </Flex>                                
+                                </NavLink>
                                 
                                 
                             </Box>
