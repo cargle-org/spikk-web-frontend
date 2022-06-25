@@ -1,4 +1,4 @@
-import { Container, Box, Flex, HStack, Grid, VStack, Heading,Collapse, Text, Button, Progress, FormControl, Input,InputLeftElement, InputGroup, Spacer, Divider, Table, TableContainer, Th, Tr, Td, Thead, Tbody, Tfoot, TableCaption, InputAddon, Icon, useDisclosure, Image, CloseButton, Avatar } from "@chakra-ui/react";
+import { Container, Box, Flex, HStack, Grid, VStack, Heading,Collapse, Text, Button, Progress, FormControl, Input,InputLeftElement, InputGroup, Spacer, Divider, Table, TableContainer, Th, Tr, Td, Thead, Tbody, Tfoot, TableCaption, InputAddon, Icon, useDisclosure, Image, CloseButton, Avatar, AvatarBadge } from "@chakra-ui/react";
 import InnerHeader from "../../components/innerpages/InnerHeader";
 import InnerFooter from "../../components/landing/LandingFooter";
 import { NavLink } from "react-router-dom";
@@ -25,7 +25,9 @@ function AvailablePickers() {
                             <Box borderRadius={"20px"} px={3} py={7} color={'spikk-light-gray'}  >
                                 <Flex borderRadius={"20px"} my={4} p={3} bgColor={"spikk-inner-header-bg"}  borderWidth={'1px'} borderColor={'gray'}>
                                     <Box pt={2}>
-                                        <Avatar  mr={3} name='Dan Abrahmov' src='https://bit.ly/dan-abramov' />
+                                        <Avatar  mr={3} name='samp' src='https://bit.ly/dan-abramov'>
+                                            <AvatarBadge boxSize='1.5em' bgColor='white' color='black' fontSize={10} w={8}>4.0*</AvatarBadge>
+                                        </Avatar>
                                     </Box>
                                     <Box>
                                         <Heading as='h4' pt={3} textAlign={'left'} size='sm' color={'white'}>
@@ -43,7 +45,9 @@ function AvailablePickers() {
                                 </Flex>
                                 <Flex borderRadius={"20px"} my={4} p={3} bgColor={"spikk-inner-header-bg"}  borderWidth={'1px'} borderColor={'gray'}>
                                     <Box pt={2}>
-                                        <Avatar  mr={3} name='Dan Abrahmov' src='https://bit.ly/dan-abramov' />
+                                        <Avatar  mr={3} name='samp' src='https://bit.ly/dan-abramov'>
+                                            <AvatarBadge boxSize='1.5em' bgColor='white' color='black' fontSize={10} w={8}>4.0*</AvatarBadge>
+                                        </Avatar>
                                     </Box>
                                     <Box>
                                         <Heading as='h4' pt={3} textAlign={'left'} size='sm' color={'white'}>
@@ -61,7 +65,9 @@ function AvailablePickers() {
                                 </Flex>
                                 <Flex borderRadius={"20px"} my={4} p={3} bgColor={"spikk-inner-header-bg"}  borderWidth={'1px'} borderColor={'gray'}>
                                     <Box pt={2}>
-                                        <Avatar  mr={3} name='Dan Abrahmov' src='https://bit.ly/dan-abramov' />
+                                        <Avatar  mr={3} name='samp' src='https://bit.ly/dan-abramov'>
+                                            <AvatarBadge boxSize='1.5em' bgColor='white' color='black' fontSize={10} w={8}>4.0*</AvatarBadge>
+                                        </Avatar>
                                     </Box>
                                     <Box>
                                         <Heading as='h4' pt={3} textAlign={'left'} size='sm' color={'white'}>
