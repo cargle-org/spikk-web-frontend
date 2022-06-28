@@ -77,7 +77,7 @@ function FindingPickers() {
                                         <SkeletonText pt={3} noOfLines={1} spacing='4' />
                                     </Box>
                                     <Spacer/>
-                                    <Box pt={3} mr={4}>
+                                    <Box pt={3} mr={4} >
                                         <SkeletonCircle mr={3} size='3' />
                                     </Box>
                                 </Flex> 
