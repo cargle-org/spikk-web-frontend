@@ -100,7 +100,7 @@ function DashboardHeader() {
                     <TabList>
                         <NavLink to={"/buy-anything"}>
                             <Tab>
-                                <BsCart/>&nbsp;  Start New Order
+                                <BsCart/>&nbsp;  Start New Order &nbsp;
                             </Tab>
                         </NavLink>
                     </TabList>
