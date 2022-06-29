@@ -1,4 +1,4 @@
-import { Box, HStack, VStack, Heading,Collapse, Text, Button, useDisclosure, Icon, CloseButton } from "@chakra-ui/react";
+import { Flex, Spacer, Box, HStack, VStack, Heading,Collapse, Text, Button, useDisclosure, Icon, CloseButton, Image } from "@chakra-ui/react";
 import { BsArrowBarDown, BsCart } from "react-icons/bs";
 
 import { FiChevronDown } from "react-icons/fi";
@@ -11,23 +11,24 @@ function ShoppingGuidelines() {
         <>
             <VStack w={'container.md'}  mx={5}  borderRadius={"20px"}>
                         
-                <Box w={'full'} borderRadius={"20px"} bgColor={"spikk-box-bg"} px={"20%"} py={10}  >
+                <Box w={'full'} borderTopRadius={"20px"} bgColor={"spikk-box-bg"} px={"10%"} py={10}  >
                     <HStack>
                         <VStack>
                             <Icon as={BsCart} boxSize={14} color={'spikk-gray'} bgColor={'spikk-inner-header-bg'} p={3} />
                         </VStack>
                         <VStack>
-                            <Text color={'spikk-gray'}>
+                            <Text color={'spikk-gray'} fontSize={'13px'} alignSelf={'start'}>
                                 Shop Anything
                             </Text>
-                            <Heading as='h2' size='lg' color={'spikk-gray'}>
+                            <Heading as='h2' size='md' color={'spikk-gray'}>
                             Shopping Guidelines
                             </Heading>
-                            
-                            
                         </VStack>
                         <VStack>
-                            <Button onClick={onToggle} bgColor={'transparent'} _hover={{backgroundColor: 'transparent'}} _focus={{backgroundColor: 'spikk-gray'}} > <FiChevronDown  color="white"/> </Button>
+                            <Button w={10} onClick={onToggle} bgColor={'transparent'} _hover={{backgroundColor: 'transparent'}} _focus={{backgroundColor: 'spikk-gray'}} >
+                                 <Icon as={FiChevronDown} boxSize={14} color={'white'} p={3} />
+
+                            </Button>
                         </VStack>
                     </HStack>
                     <HStack>
@@ -62,6 +63,26 @@ function ShoppingGuidelines() {
                     
                     
                 </Box> 
+                <Box w={'full'} borderBottomRadius={"20px"} bgColor={"spikk-box-bg"} px={"10%"} py={10}  >
+                    <Flex>
+                        <Box>
+
+                        </Box>
+                        <Spacer/>
+                        <Box>
+
+                        </Box>
+                        <Spacer/>
+                        <Box>
+
+                        </Box>
+                        <Spacer/>
+                        <Box>
+
+                        </Box>
+
+                    </Flex>
+                </Box> 
                 <Box w={'full'} borderRadius={"20px"} bgColor={"spikk-box-bg"} px={"20%"} py={10}  >
                     <Heading as={'h3'} size={'lg'} color={'spikk-yellow'}>
                         Insert Ads here
@@ -71,9 +92,9 @@ function ShoppingGuidelines() {
                         piscing elit, sed do eiusmod tempor incidid
                         unt ut labore et dolore magna aliqua
                     </Text>
-
-                    
-                    
+                    <Box py={4}>
+                        <Image src={require("../../assets/images/slider.png")}/>
+                    </Box>
                 </Box> 
             </VStack>
         </>

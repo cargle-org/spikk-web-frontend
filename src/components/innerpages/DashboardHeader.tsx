@@ -10,7 +10,7 @@ import { BsCart } from "react-icons/bs";
 import { BiChat } from "react-icons/bi";
 
 
-function InnerHeader() {
+function DashboardHeader() {
     const [showDropdown, setShowDropdown] = useState(false);
     return ( 
         <Box as="header"  background={"spikk-inner-header-bg"}>
@@ -95,24 +95,14 @@ function InnerHeader() {
 
 
             <Flex alignItems={"center"} maxW ={"1200px"} paddingX ={"16px"} marginX ={"auto"} justifyContent={"space-between"}>
-                <NavLink to={"/"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
-                            <div className="header-link"> 
-                                <FiChevronLeft></FiChevronLeft>
-                                Home
-                            </div>
-                </NavLink>           
+                         
                 <Tabs variant='soft-rounded' colorScheme='gray'>
                     <TabList>
                         <NavLink to={"/buy-anything"}>
                             <Tab>
-                                Buy Anything
+                                <BsCart/>&nbsp;  Start New Order
                             </Tab>
                         </NavLink>
-                        <Tab>
-                            <NavLink to={""}>
-                                Send Anything
-                            </NavLink>
-                        </Tab>
                     </TabList>
                 </Tabs> 
                 <Box as="nav" height={"72px"} display={"flex"} alignItems={"center"}>
@@ -136,4 +126,4 @@ function InnerHeader() {
      );
 }
 
-export default InnerHeader;
+export default DashboardHeader;

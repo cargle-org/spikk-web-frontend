@@ -9,6 +9,7 @@ const BuyAnythingLocation = React.lazy(() => import('../BuyAnything/BuyAnythingL
 const BuyAnythingOrderSummary = React.lazy(() => import('../BuyAnything/BuyAnythingOrderSummary')) 
 const AvailablePickers = React.lazy(() => import('../BuyAnything/AvailablePickers')) 
 const FindingPickers = React.lazy(() => import('../BuyAnything/FindingPickers')) 
+const Dashboard = React.lazy(() => import('../Dashboard/Dashboard')) 
 
 const LandingRoutes = () => {
   return (
@@ -22,6 +23,7 @@ const LandingRoutes = () => {
             <Route path='/buy-anything-available-pickers' element = {<AvailablePickers/>} />
             <Route path='/buy-anything-picker-selected' element = {<PickerSelected/>} />
             <Route path='/buy-anything-finding-pickers' element = {<FindingPickers/>} />
+            <Route path='/dashboard' element = {<Dashboard/>} />
 
             FindingPickers
             <Route path='/orders' element = {<OrderHome/>} />

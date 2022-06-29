@@ -11,13 +11,14 @@ import { MdStickyNote2 } from "react-icons/md";
 import { HiOutlineDownload, HiOutlineLocationMarker } from "react-icons/hi";
 import { FiChevronRight } from "react-icons/fi";
 import { BsStar } from "react-icons/bs";
+import DashboardHeader from "../../components/innerpages/DashboardHeader";
 
 
 
 function OrderHome() {
     return ( 
         <>
-            <InnerHeader/>
+            <DashboardHeader/>
             <Container maxW='container.x1' bg='spikk-inner-page-bg' color={'white'}>
                 
                 <Flex px={50} py={50} align={'left'} flexDirection={{base: 'column', xs: 'column', sm: 'column', md: 'column', lg: 'row'}}>
