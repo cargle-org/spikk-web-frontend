@@ -9,9 +9,9 @@ import { BiAddToQueue } from "react-icons/bi";
 import { ImCross } from "react-icons/im";
 
 import { VscAdd } from "react-icons/vsc";
-import InnerHeader from "../../components/innerpages/InnerHeader";
-import InnerFooter from "../../components/landing/LandingFooter";
-import ShoppingGuidelines from "../../components/innerpages/ShoppingGuidelines";
+import InnerHeader from "../../../components/innerpages/InnerHeader";
+import InnerFooter from "../../../components/landing/LandingFooter";
+import ShoppingGuidelines from "../../../components/dashboard/ShoppingGuidelines";
 import { NavLink } from "react-router-dom";
 
 function BuyAnything2() {
@@ -152,7 +152,7 @@ function BuyAnything2() {
                                         <Tbody>
                                             <Tr>
                                                 <Td>
-                                                    <Image src={require("../../assets/images/pringles.png")} height={"22px"} alt="item" />
+                                                    <Image src={require("../../../assets/images/pringles.png")} height={"22px"} alt="item" />
                                                 </Td>
                                                 <Td>
                                                     Pringles Sour Cream &  Onion Flavor 
@@ -165,7 +165,7 @@ function BuyAnything2() {
                                             </Tr>
                                             <Tr>
                                                 <Td>
-                                                    <Image src={require("../../assets/images/pringles.png")} height={"22px"} alt="item" />
+                                                    <Image src={require("../../../assets/images/pringles.png")} height={"22px"} alt="item" />
                                                 </Td>
                                                 <Td>
                                                     Pringles Sour Cream &  Onion Flavor 
@@ -178,7 +178,7 @@ function BuyAnything2() {
                                             </Tr>
                                             <Tr>
                                                 <Td>
-                                                    <Image src={require("../../assets/images/pringles.png")} height={"22px"} alt="item" />
+                                                    <Image src={require("../../../assets/images/pringles.png")} height={"22px"} alt="item" />
                                                 </Td>
                                                 <Td>
                                                     Pringles Sour Cream &  Onion Flavor 

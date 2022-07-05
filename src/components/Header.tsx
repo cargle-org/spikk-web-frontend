@@ -1,20 +1,17 @@
 import React, { useState } from "react";
-import { Image, TabList, Tabs, Tab, Box, Button, Spacer, Flex, VStack, Divider, Text, Icon } from "@chakra-ui/react";
-import { FiChevronDown, FiArrowUpRight, FiChevronLeft, FiHome, FiBell } from "react-icons/fi";
-import { FaBeer, FaBell, FaCartPlus, FaHome } from "react-icons/fa";
+import { Image, TabList, Tabs, Tab, Box, Flex, VStack, Divider, Text, Icon } from "@chakra-ui/react";
+import { FiChevronDown, FiArrowUpRight, FiBell } from "react-icons/fi";
 import { Link, NavLink } from "react-router-dom";
-import { BellIcon, ChatIcon } from "@chakra-ui/icons";
-import { SiChatbot } from "react-icons/si";
 import { VscHome } from "react-icons/vsc";
 import { BsCart } from "react-icons/bs";
 import { BiChat } from "react-icons/bi";
 
-function InnerHeader() {
+function Header() {
   const [showDropdown, setShowDropdown] = useState(false);
   return (
     <Box as="header" background={"spikk-inner-header-bg"}>
       <Flex alignItems={"center"} maxW={"1200px"} paddingX={"16px"} marginX={"auto"} justifyContent={"space-between"}>
-        <Image src={require("../../assets/images/spikklogo.png")} height={"7"} alt="Spikk Logo" />
+        <Image src={require("../assets/images/spikklogo.png")} height={"7"} alt="Spikk Logo" />
         <Box as="nav" height={"72px"} display={"flex"} alignItems={"center"}>
           <Box position={"relative"}>
             <Box
@@ -89,58 +86,50 @@ function InnerHeader() {
           </Box>
         </Box>
       </Flex>
-      <hr style={{ marginLeft: "9%", marginRight: "9%" }} />
 
-      {false && (
-        <Flex alignItems={"center"} maxW={"1200px"} paddingX={"16px"} marginX={"auto"} justifyContent={"space-between"}>
-          <NavLink to={"/"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
-            <div className="header-link">
-              <FiChevronLeft></FiChevronLeft>
-              Home
-            </div>
-          </NavLink>
-          <Tabs variant="soft-rounded" colorScheme="gray">
-            <TabList>
-              <NavLink to={"/buy-anything"}>
-                <Tab>Buy Anything</Tab>
-              </NavLink>
-              <Tab>
-                <NavLink to={""}>Send Anything</NavLink>
-              </Tab>
-            </TabList>
-          </Tabs>
-          <Box as="nav" height={"72px"} display={"flex"} alignItems={"center"}>
-            <Box as="ul" display={"flex"} gap={"40px"} marginRight={"40px"}>
-              <NavLink to={"/dashboard"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
-                <div className="header-link">
-                  {" "}
-                  <VscHome /> &nbsp; &nbsp; Home
-                </div>
-              </NavLink>
-              <NavLink to={"/orders"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
-                <div className="header-link">
-                  {" "}
-                  <BsCart /> &nbsp; &nbsp; Orders
-                </div>
-              </NavLink>
-              <NavLink to={"/about"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
-                <div className="header-link">
-                  {" "}
-                  <FiBell /> &nbsp; &nbsp; Alerts
-                </div>
-              </NavLink>
-              <NavLink to={"/about"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
-                <div className="header-link">
-                  {" "}
-                  <BiChat /> &nbsp; &nbsp; Chat
-                </div>
-              </NavLink>
+      {true && (
+        <>
+          <hr style={{ marginLeft: "9%", marginRight: "9%" }} />
+          <Flex alignItems={"center"} maxW={"1200px"} paddingX={"16px"} marginX={"auto"} justifyContent={"space-between"}>
+            <NavLink to={"/order"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
+              <Flex className={"buy-anything-link"} alignItems={"center"} gap ={"8px"} bg={"white"} color={"spikk-header-bg"} rounded={"full"} padding ={"10px 20px"} >
+                <Icon as ={BsCart}  strokeWidth={0.5} />
+                <Text fontSize={"sm"} fontWeight={"semibold"}  >Start New Order</Text>
+              </Flex>
+            </NavLink>
+            <Box as="nav" height={"72px"} display={"flex"} alignItems={"center"}>
+              <Box as="ul" display={"flex"} gap={"40px"} marginRight={"40px"}>
+                <NavLink to={"/dashboard"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
+                  <div className="header-link">
+                    {" "}
+                    <VscHome /> &nbsp; &nbsp; Home
+                  </div>
+                </NavLink>
+                <NavLink to={"/orders"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
+                  <div className="header-link">
+                    {" "}
+                    <BsCart /> &nbsp; &nbsp; Orders
+                  </div>
+                </NavLink>
+                <NavLink to={"/alerts"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
+                  <div className="header-link">
+                    {" "}
+                    <FiBell /> &nbsp; &nbsp; Alerts
+                  </div>
+                </NavLink>
+                <NavLink to={"/chat"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
+                  <div className="header-link">
+                    {" "}
+                    <BiChat /> &nbsp; &nbsp; Chat
+                  </div>
+                </NavLink>
+              </Box>
             </Box>
-          </Box>
-        </Flex>
+          </Flex>
+        </>
       )}
     </Box>
   );
 }
 
-export default InnerHeader;
+export default Header;

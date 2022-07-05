@@ -12,9 +12,9 @@ import { GrLocation } from "react-icons/gr";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import { BiCommentDetail } from "react-icons/bi";
 import { VscAdd } from "react-icons/vsc";
-import InnerHeader from "../../components/innerpages/InnerHeader";
-import InnerFooter from "../../components/landing/LandingFooter";
-import ShoppingGuidelines from "../../components/innerpages/ShoppingGuidelines";
+import InnerHeader from "../../../components/innerpages/InnerHeader";
+import InnerFooter from "../../../components/landing/LandingFooter";
+import ShoppingGuidelines from "../../../components/dashboard/ShoppingGuidelines";
 import { NavLink } from "react-router-dom";
 
 function BuyAnythingStep2() {

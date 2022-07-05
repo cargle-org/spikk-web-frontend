@@ -1,6 +1,6 @@
 import { Container, Box, Flex, HStack, Grid, VStack, Heading, SkeletonCircle,SkeletonText, Collapse, Text, Button, Progress, FormControl, Input,InputLeftElement, InputGroup, Spacer, Divider, Table, TableContainer, Th, Tr, Td, Thead, Tbody, Tfoot, TableCaption, InputAddon, Icon, useDisclosure, Image, CloseButton, Avatar, AvatarBadge } from "@chakra-ui/react";
-import InnerHeader from "../../components/innerpages/InnerHeader";
-import InnerFooter from "../../components/landing/LandingFooter";
+import InnerHeader from "../../../components/innerpages/InnerHeader";
+import InnerFooter from "../../../components/landing/LandingFooter";
 import { NavLink } from "react-router-dom";
 
 

@@ -54,3 +54,8 @@
     top: 50%;
     transform: translateX(100%) translateY(-50%);
 }
+
+.active .buy-anything-link {
+    background-color: #FBA819;
+    /* color: white; */
+}
