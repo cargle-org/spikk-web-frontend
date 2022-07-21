@@ -1,13 +1,16 @@
 import { Box, Flex, Text, Stack } from "@chakra-ui/react";
 import React, { useState } from "react";
+import OrderSummary from "./_components/OrderSummary";
+import SelectItems from "./_components/SelectItems";
+import SelectLocations from "./_components/SelectLocations";
 
 type OrderStep = 1 | 2 | 3;
 
 const CreateOrder = () => {
   const [activeStep, setActiveStep] = useState<OrderStep>(1);
   return (
-    <Stack>
-      <Stack spacing={4} bg={"spikk-inner-header-bg"} borderTopRadius={"20px"} width={"full"} padding={"36px"}>
+    <Stack bg={"spikk-inner-header-bg"} borderRadius={"20px"} overflow="hidden" >
+      <Stack spacing={4} width={"full"} padding={"36px"}>
         <Flex color={"spikk-yellow"} justifyContent={"space-between"}>
           <Text>
             {activeStep === 1
@@ -28,6 +31,15 @@ const CreateOrder = () => {
             <Box rounded={"full"} height={"8px"} bg={"spikk-yellow"} width ={`${(activeStep/3)*100}%`}/>
         </Box>
       </Stack>
+      <Box>
+        {activeStep === 1 ? (
+            <SelectItems/>
+        ) : activeStep === 2? (
+          <SelectLocations/>
+        ) : activeStep === 3?(
+          <OrderSummary/>
+        ) : null}
+      </Box>
     </Stack>
   );
 };
