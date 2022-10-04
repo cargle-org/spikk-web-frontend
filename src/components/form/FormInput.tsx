@@ -37,6 +37,7 @@ const FormInput = forwardRef<HTMLInputElement, IFormInput>((props, ref) => {
             rounded={4}
             fontSize="sm"
             disabled={isDisabled}
+            borderColor={""}
             _hover={{}}
             _focus={{}}
             {...props}
