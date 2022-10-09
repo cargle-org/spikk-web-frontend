@@ -8,9 +8,8 @@ import { NavLink } from "react-router-dom";
 const Homepage = () => {
   return (
     <div>
-      <LandingHeader />
       <Box as={"section"} bg={"spikk-dark-bg"}>
-        <Flex paddingTop={ {base : "20px" , lg :"80px"}} maxWidth={"1440px"} margin={"0 auto"} flexWrap={{ base: "wrap", lg: "nowrap" }}>
+        <Flex paddingTop={{ base: "20px", lg: "80px" }} maxWidth={"1440px"} margin={"0 auto"} flexWrap={{ base: "wrap", lg: "nowrap" }}>
           <Box paddingTop={"32px"} width={{ base: "100%", lg: "" }}>
             <Box>
               <Box
@@ -41,17 +40,16 @@ const Homepage = () => {
                 </Flex>
                 <HStack marginBottom={"96px"} width={"100%"} justifyContent={{ base: "center", md: "left" }}>
                   <NavLink to={"/buy-anything"}>
-
-                  <Box
-                    padding={"0 24px"}
-                    border={"1px solid"}
-                    color={"spikk-orange"}
-                    borderRadius={"9999px"}
-                    display={"flex"}
-                    alignItems={"center"}
-                    gap={"10px"}
-                    height={"48px"}
-                  >
+                    <Box
+                      padding={"0 24px"}
+                      border={"1px solid"}
+                      color={"spikk-orange"}
+                      borderRadius={"9999px"}
+                      display={"flex"}
+                      alignItems={"center"}
+                      gap={"10px"}
+                      height={"48px"}
+                    >
                       <BsCart2 size={18} />
                       <Text
                         as={"span"}
@@ -61,11 +59,9 @@ const Homepage = () => {
                         lineHeight={"100%"}
                         paddingTop={"4px"}
                       >
-                        
-                          Buy anything
+                        Buy anything
                       </Text>
-
-                  </Box>
+                    </Box>
                   </NavLink>
 
                   <Box
@@ -146,7 +142,7 @@ const Homepage = () => {
 
         <Box textAlign={"center"} marginTop={"40px"} paddingBottom={"120px"}>
           <Box display={"inline-block"} margin={"0 auto"} position={"relative"} padding={{ base: "0 32px", md: "" }}>
-            <Image src={require("../../assets/images/homepage/about-banner-2.svg").default}  marginBottom={{ base: " 40px", lg: "0" }}/>
+            <Image src={require("../../assets/images/homepage/about-banner-2.svg").default} marginBottom={{ base: " 40px", lg: "0" }} />
             <Box
               position={{ base: "initial", lg: "absolute" }}
               maxW={{ base: "320px", lg: "185px" }}
@@ -278,8 +274,6 @@ const Homepage = () => {
           </Box>
         </Box>
       </Box>
-
-      <LandingFooter />
     </div>
   );
 };
