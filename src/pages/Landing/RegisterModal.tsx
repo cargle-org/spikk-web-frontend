@@ -159,3 +159,4 @@ const RegisterModal = (props: ModalProps): JSX.Element => {
   }
   
   export default RegisterModal;
+  
