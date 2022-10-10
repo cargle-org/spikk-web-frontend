@@ -1,11 +1,18 @@
 import React, { useState } from "react";
-import { Image, Box, Button, Spacer, Flex, VStack, Divider, Text } from "@chakra-ui/react";
+import { Image, Box, Button, Spacer, Flex, VStack, Divider, Text, useDisclosure } from "@chakra-ui/react";
 import { FiChevronDown, FiArrowUpRight } from "react-icons/fi";
 import { FaBeer } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
+import RegisterModal from "../../pages/Landing/RegisterModal";
 
 const LandingHeader = () => {
   const [showDropdown, setShowDropdown] = useState(false);
+  const {onOpen,isOpen, onClose} = useDisclosure();
+
+  const handleModalOpen = () => {
+    setShowDropdown(false);
+    onOpen();
+  }
   return (
     <Box as="header" background={"spikk-header-bg"}>
       <Flex height={"72px"} alignItems={"center"} maxW={"1200px"} paddingX={"16px"} marginX={"auto"} justifyContent={{ base: "center", md: "space-between" }}>
@@ -45,7 +52,7 @@ const LandingHeader = () => {
                       <Text color={"spikk-text1"} textAlign={"center"} fontSize={"small"}>
                         Don't have an account?
                       </Text>
-                      <Link to="auth/login">
+                      <Box onClick={handleModalOpen} cursor={"pointer"}>
                         <Box
                           height={"36px"}
                           width={"140px"}
@@ -60,7 +67,7 @@ const LandingHeader = () => {
                         >
                           Join spikk <FiArrowUpRight size={"24px"} />{" "}
                         </Box>
-                      </Link>
+                      </Box>
                     </Box>
                   </Box>
                   <Divider />
@@ -92,6 +99,7 @@ const LandingHeader = () => {
           </Box>
         </Box>
       </Flex>
+      <RegisterModal isOpen={isOpen} onClose={onClose}/>
     </Box>
   );
 };

@@ -59,3 +59,24 @@
     background-color: #FBA819;
     /* color: white; */
 }
+
+.modal-close-icon {
+    cursor: pointer;
+}
+
+.chakra-modal__header{
+    border-top: 5px solid #FFF59A;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 1px solid rgba(111, 111, 111, 0.5);
+}
+
+.chakra-modal__footer {
+    margin: 0.5rem;
+    background: #F1F1F3;
+    border-radius: 6px;
+}
+
+.modal-footer-link{
+    color:  #E43F3C;
+}
