@@ -1,0 +1,61 @@
+@import url("./assets/fonts/fonts.css");
+
+.header-link {
+    height: 72px;
+    align-items: center;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    color: #F5F4FF;
+    padding: 0 16px;
+    display: flex;
+    position: relative;
+}
+
+.active .header-link {
+    color: #FBA819;
+    font-weight: 700;
+}
+
+.active .header-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #FBA819;
+    height: 5px;
+    border-radius: 5px 5px 0px 0px;
+    z-index: 5;
+    width: 100%;
+}
+.about-header {
+    position: relative;
+    display: inline;
+}
+
+.about-header::before {
+    content: "";
+    position: absolute;
+    width: 76px;
+    height: 3px;
+    background: #353547;
+    left: -12px;
+    top: 50%;
+    transform: translateX(-100%) translateY(-50%);
+}
+
+.about-header::after {
+    content: "";
+    position: absolute;
+    width: 76px;
+    height: 3px;
+    background: #353547;
+    right: -12px;
+    top: 50%;
+    transform: translateX(100%) translateY(-50%);
+}
+
+.active .buy-anything-link {
+    background-color: #FBA819;
+    /* color: white; */
+}
