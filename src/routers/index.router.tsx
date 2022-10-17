@@ -16,7 +16,6 @@ const IndexRouter = () => {
         <Routes>
           <Route element={<PublicRoutes />}>
             <Route path="/*" element={<LandingRoutes />} />
-            <Route path="auth/*" element={<AuthRoutes />} />
           </Route>
           <Route element={<PrivateRoutes />}>
             <Route element={<Layout />}>
