@@ -22,7 +22,7 @@ const LandingHeader = () => {
             <NavLink to={"/"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
               <div className="header-link">Home</div>
             </NavLink>
-            <NavLink to={"/about"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
+            <NavLink to={"#about"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
               <div className="header-link">About</div>
             </NavLink>
           </Box>
@@ -75,8 +75,7 @@ const LandingHeader = () => {
                     <Text color={"spikk-text1"} textAlign={"center"} fontSize={"small"}>
                       Already have an account ?
                     </Text>
-                    <Link to="auth/login">
-                      <Box
+                      <Box onClick={handleModalOpen} cursor={"pointer"}
                         height={"36px"}
                         width={"140px"}
                         border={"1px solid"}
@@ -91,7 +90,6 @@ const LandingHeader = () => {
                       >
                         LOG IN HERE
                       </Box>
-                    </Link>
                   </Box>
                 </VStack>
               </Box>

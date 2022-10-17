@@ -18,7 +18,7 @@ import Header from "../../components/Header";
 function OrderHome() {
     return ( 
         <>
-            <Header/>
+            {/* <Header/> */}
             <Container maxW='container.x1' bg='spikk-inner-page-bg' color={'white'}>
                 
                 <Flex px={50} py={50} align={'left'} flexDirection={{base: 'column', xs: 'column', sm: 'column', md: 'column', lg: 'row'}}>

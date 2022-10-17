@@ -1,13 +1,20 @@
 import React, { useState } from "react";
-import { Image, TabList, Tabs, Tab, Box, Flex, VStack, Divider, Text, Icon } from "@chakra-ui/react";
+import { Image, TabList, Tabs, Tab, Box, Flex, VStack, Divider, Text, Icon, useDisclosure } from "@chakra-ui/react";
 import { FiChevronDown, FiArrowUpRight, FiBell } from "react-icons/fi";
 import { Link, NavLink } from "react-router-dom";
 import { VscHome } from "react-icons/vsc";
 import { BsCart } from "react-icons/bs";
 import { BiChat } from "react-icons/bi";
+import RegisterModal from "../pages/Landing/RegisterModal";
 
 function Header() {
   const [showDropdown, setShowDropdown] = useState(false);
+  const {onOpen,isOpen, onClose} = useDisclosure();
+
+  const handleModalOpen = () => {
+    setShowDropdown(false);
+    onOpen();
+  }
   return (
     <Box as="header" background={"spikk-inner-header-bg"}>
       <Flex alignItems={"center"} maxW={"1200px"} paddingX={"16px"} marginX={"auto"} justifyContent={"space-between"}>
@@ -39,8 +46,7 @@ function Header() {
                       <Text color={"spikk-text1"} textAlign={"center"} fontSize={"small"}>
                         Don't have an account?
                       </Text>
-                      <Link to="auth/login">
-                        <Box
+                        <Box onClick={handleModalOpen} cursor={"pointer"}
                           height={"36px"}
                           width={"140px"}
                           backgroundColor={"spikk-red"}
@@ -54,7 +60,6 @@ function Header() {
                         >
                           Join spikk <FiArrowUpRight size={"24px"} />{" "}
                         </Box>
-                      </Link>
                     </Box>
                   </Box>
                   <Divider />
@@ -62,8 +67,7 @@ function Header() {
                     <Text color={"spikk-text1"} textAlign={"center"} fontSize={"small"}>
                       Already have an account ?
                     </Text>
-                    <Link to="auth/login">
-                      <Box
+                      <Box onClick={handleModalOpen} cursor={"pointer"}
                         height={"36px"}
                         width={"140px"}
                         border={"1px solid"}
@@ -78,7 +82,6 @@ function Header() {
                       >
                         LOG IN HERE
                       </Box>
-                    </Link>
                   </Box>
                 </VStack>
               </Box>
@@ -105,19 +108,19 @@ function Header() {
                     <VscHome /> &nbsp; &nbsp; Home
                   </div>
                 </NavLink>
-                <NavLink to={"/orders"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
+                <NavLink to={"/dashboard/orders"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
                   <div className="header-link">
                     {" "}
                     <BsCart /> &nbsp; &nbsp; Orders
                   </div>
                 </NavLink>
-                <NavLink to={"/alerts"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
+                <NavLink to={"/dashboard/alerts"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
                   <div className="header-link">
                     {" "}
                     <FiBell /> &nbsp; &nbsp; Alerts
                   </div>
                 </NavLink>
-                <NavLink to={"/chat"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
+                <NavLink to={"/dashboard/chat"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
                   <div className="header-link">
                     {" "}
                     <BiChat /> &nbsp; &nbsp; Chat
@@ -128,6 +131,7 @@ function Header() {
           </Flex>
         </>
       )}
+      <RegisterModal isOpen={isOpen} onClose={onClose}/>
     </Box>
   );
 }

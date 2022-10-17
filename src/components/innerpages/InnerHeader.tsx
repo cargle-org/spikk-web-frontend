@@ -117,19 +117,19 @@ function InnerHeader() {
                   <VscHome /> &nbsp; &nbsp; Home
                 </div>
               </NavLink>
-              <NavLink to={"/orders"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
+              <NavLink to={"/dashboard/orders"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
                 <div className="header-link">
                   {" "}
                   <BsCart /> &nbsp; &nbsp; Orders
                 </div>
               </NavLink>
-              <NavLink to={"/about"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
+              <NavLink to={"/dashboard/alerts"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
                 <div className="header-link">
                   {" "}
                   <FiBell /> &nbsp; &nbsp; Alerts
                 </div>
               </NavLink>
-              <NavLink to={"/about"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
+              <NavLink to={"/dashboard/chat"} className={({ isActive }) => (isActive ? "active" : "inactive")}>
                 <div className="header-link">
                   {" "}
                   <BiChat /> &nbsp; &nbsp; Chat
