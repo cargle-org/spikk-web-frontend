@@ -56,10 +56,14 @@
     ]
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.40.0",
-    "@typescript-eslint/parser": "^5.40.0",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@typescript-eslint/parser": "^5.40.1",
     "eslint": "^8.25.0",
     "eslint-config-google": "^0.14.0",
     "eslint-plugin-react": "^7.31.10"
-  }
+  },
+  "main": "index.js",
+  "repository": "git@github.com:cargle-org/spikk-web-frontend.git",
+  "author": "Olaolu Johnson <johnsonolaolu@gmail.com>",
+  "license": "MIT"
 }
