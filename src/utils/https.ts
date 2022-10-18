@@ -1,9 +1,7 @@
 /* eslint-disable no-param-reassign */
 import axios from 'axios';
 import QueryString from 'query-string';
-import {
-  IDelete, IGet, IPatch, IPost, IPut,
-} from './types';
+import { IDelete, IGet, IPatch, IPost, IPut } from './types';
 
 class HttpFacade {
   private http;
@@ -20,20 +18,20 @@ class HttpFacade {
         if (token) config.headers!.Authorization = `Bearer ${token}`;
         return config;
       },
-      (error) => Promise.reject(error),
+      (error) => Promise.reject(error)
     );
 
     this.http.interceptors.response.use(
       (response) => response,
       (error) => {
         if (
-          error?.response?.status === 401
-            && window.location.pathname !== '/auth/login'
+          error?.response?.status === 401 &&
+          window.location.pathname !== '/auth/login'
         ) {
           window.location.href = '/auth/logout';
         }
         return Promise.reject(error.response);
-      },
+      }
     );
   }
 
