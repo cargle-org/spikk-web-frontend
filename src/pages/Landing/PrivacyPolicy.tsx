@@ -1,8 +1,5 @@
 import React from "react";
-import { Box, Flex, Text, HStack, Image } from "@chakra-ui/react";
-import { BsCart2 } from "react-icons/bs";
-import { VscPackage } from "react-icons/vsc";
-import { NavLink } from "react-router-dom";
+import { Box, Flex, Text,  Image } from "@chakra-ui/react";
 
 const PrivacyPolicy = () => {
   return (
