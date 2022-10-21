@@ -1,22 +1,22 @@
-import { Box, Grid } from '@chakra-ui/react'
-import React from 'react'
-import { Outlet } from 'react-router'
-import ShoppingGuidelines from './dashboard/ShoppingGuidelines'
-import Header from './Header'
-import PutAds from './dashboard/PutAds'
+/* eslint-disable no-lone-blocks */
+import { Box } from '@chakra-ui/react';
+import React from 'react';
+import { Outlet } from 'react-router';
+// import ShoppingGuidelines from './dashboard/ShoppingGuidelines';
+import Header from './Header';
+// import PutAds from './dashboard/PutAds';
 
-const Layout = () => {
-  return (
-    <Box as ="main" minH={"100vh"} bg ={"spikk-dark-bg"}>
-        <Header/>
-        <Box maxW={"1200px"} paddingX={"16px"} marginX={"auto"} paddingY={"28px"}>
-          <Outlet/>
-        </Box>
+const Layout = () => (
+  <Box as="main" minH="100vh" bg="spikk-dark-bg">
+    <Header />
+    <Box maxW="1200px" paddingX="16px" marginX="auto" paddingY="28px">
+      <Outlet />
     </Box>
-  )
-}
+  </Box>
+);
 
-{/* <Box as ="main" minH={"100vh"} bg ={"spikk-dark-bg"}>
+{
+  /* <Box as ="main" minH={"100vh"} bg ={"spikk-dark-bg"}>
 <Header/>
 <Grid maxW={"1200px"} paddingX={"16px"} marginX={"auto"} paddingY={"28px"} gridTemplateColumns ={"1fr 480px"} gap={"24px"}>
   <Outlet/>
@@ -25,6 +25,7 @@ const Layout = () => {
     <PutAds/>
   </Box> 
 </Grid>
-</Box> */}
+</Box> */
+}
 
-export default Layout
+export default Layout;
