@@ -1,9 +1,5 @@
-import React from 'react'
+import React from 'react';
 
-const PutAds = () => {
-  return (
-    <div>PutAds</div>
-  )
-}
+const PutAds = () => <div>PutAds</div>;
 
-export default PutAds
+export default PutAds;

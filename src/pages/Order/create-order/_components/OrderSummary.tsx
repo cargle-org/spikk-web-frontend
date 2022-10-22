@@ -1,9 +1,5 @@
-import React from 'react'
+import React from 'react';
 
-const OrderSummary = () => {
-  return (
-    <div>OrderSummary</div>
-  )
-}
+const OrderSummary = () => <div>OrderSummary</div>;
 
-export default OrderSummary
+export default OrderSummary;

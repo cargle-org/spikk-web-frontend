@@ -1,15 +1,12 @@
-import React from 'react'
-import { Route, Routes } from 'react-router'
-const  Login = React.lazy(() => import( './Login'))
+import React from 'react';
+import { Route, Routes } from 'react-router';
 
-const AuthRoutes = () => {
-  return (
-    <>
-    <Routes>
-        <Route path='/login' element ={<Login/>} />
-    </Routes>
-    </>
-  )
-}
+const Login = React.lazy(() => import('./Login'));
 
-export default AuthRoutes
+const AuthRoutes = () => (
+  <Routes>
+    <Route path="/login" element={<Login />} />
+  </Routes>
+);
+
+export default AuthRoutes;
