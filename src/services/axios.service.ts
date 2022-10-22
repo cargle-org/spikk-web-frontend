@@ -1,19 +1,21 @@
-import axios, {AxiosInstance, AxiosRequestConfig } from 'axios'
-const defaultOptions  = {
-    baseURL: process.env.REACT_APP_BASE_URL,
-    headers: {
-      'Content-Type': 'application/json',
-    },
-  };
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
+import axios, { AxiosInstance, AxiosRequestConfig } from 'axios';
 
-  // Create instance
-  let axiosService : AxiosInstance = axios.create(defaultOptions);
+const defaultOptions = {
+  baseURL: process.env.REACT_APP_BASE_URL,
+  headers: {
+    'Content-Type': 'application/json',
+  },
+};
 
-  // Set the AUTH token for any request
-  axiosService.interceptors.request.use(function (config : AxiosRequestConfig  ) {
-    const token = localStorage.getItem('token');
-    config.headers!.Authorization =  token ? `Bearer ${token}` : '';
-    return config;
-  });
+// Create instance
+const axiosService: AxiosInstance = axios.create(defaultOptions);
 
-  export default axiosService;
+// Set the AUTH token for any request
+axiosService.interceptors.request.use((config: AxiosRequestConfig) => {
+  const token = localStorage.getItem('token');
+  config.headers!.Authorization = token ? `Bearer ${token}` : '';
+  return config;
+});
+
+export default axiosService;
