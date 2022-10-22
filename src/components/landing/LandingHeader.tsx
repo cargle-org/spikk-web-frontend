@@ -1,11 +1,28 @@
-/* eslint-disable global-require */
 import React, { useState } from 'react';
-import { Image, Box, Flex, VStack, Divider, Text } from '@chakra-ui/react';
+import {
+  Image,
+  Box,
+  Button,
+  Spacer,
+  Flex,
+  VStack,
+  Divider,
+  Text,
+  useDisclosure,
+} from '@chakra-ui/react';
 import { FiChevronDown, FiArrowUpRight } from 'react-icons/fi';
+import { FaBeer } from 'react-icons/fa';
 import { Link, NavLink } from 'react-router-dom';
+import RegisterModal from '../../pages/Landing/RegisterModal';
 
 const LandingHeader = () => {
   const [showDropdown, setShowDropdown] = useState(false);
+  const { onOpen, isOpen, onClose } = useDisclosure();
+
+  const handleModalOpen = () => {
+    setShowDropdown(false);
+    onOpen();
+  };
   return (
     <Box as="header" background="spikk-header-bg">
       <Flex
@@ -35,7 +52,7 @@ const LandingHeader = () => {
               <div className="header-link">Home</div>
             </NavLink>
             <NavLink
-              to="/about"
+              to="#about"
               className={({ isActive }) => (isActive ? 'active' : 'inactive')}
             >
               <div className="header-link">About</div>
@@ -79,7 +96,7 @@ const LandingHeader = () => {
                       >
                         Don't have an account?
                       </Text>
-                      <Link to="auth/login">
+                      <Box onClick={handleModalOpen} cursor="pointer">
                         <Box
                           height="36px"
                           width="140px"
@@ -94,7 +111,7 @@ const LandingHeader = () => {
                         >
                           Join spikk <FiArrowUpRight size="24px" />{' '}
                         </Box>
-                      </Link>
+                      </Box>
                     </Box>
                   </Box>
                   <Divider />
@@ -106,23 +123,23 @@ const LandingHeader = () => {
                     >
                       Already have an account ?
                     </Text>
-                    <Link to="auth/login">
-                      <Box
-                        height="36px"
-                        width="140px"
-                        border="1px solid"
-                        borderColor="spikk-text1"
-                        borderRadius="9999px"
-                        display="flex"
-                        alignItems="center"
-                        color="spikk-text1"
-                        textTransform="uppercase"
-                        justifyContent="center"
-                        gap="2px"
-                      >
-                        LOG IN HERE
-                      </Box>
-                    </Link>
+                    <Box
+                      onClick={handleModalOpen}
+                      cursor="pointer"
+                      height="36px"
+                      width="140px"
+                      border="1px solid"
+                      borderColor="spikk-text1"
+                      borderRadius="9999px"
+                      display="flex"
+                      alignItems="center"
+                      color="spikk-text1"
+                      textTransform="uppercase"
+                      justifyContent="center"
+                      gap="2px"
+                    >
+                      LOG IN HERE
+                    </Box>
                   </Box>
                 </VStack>
               </Box>
@@ -130,6 +147,7 @@ const LandingHeader = () => {
           </Box>
         </Box>
       </Flex>
+      <RegisterModal isOpen={isOpen} onClose={onClose} />
     </Box>
   );
 };

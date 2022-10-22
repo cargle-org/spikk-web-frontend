@@ -1,21 +1,32 @@
 import React, { useState } from 'react';
 import {
   Image,
+  TabList,
+  Tabs,
+  Tab,
   Box,
   Flex,
   VStack,
   Divider,
   Text,
   Icon,
+  useDisclosure,
 } from '@chakra-ui/react';
 import { FiChevronDown, FiArrowUpRight, FiBell } from 'react-icons/fi';
 import { Link, NavLink } from 'react-router-dom';
 import { VscHome } from 'react-icons/vsc';
 import { BsCart } from 'react-icons/bs';
 import { BiChat } from 'react-icons/bi';
+import RegisterModal from '../pages/Landing/RegisterModal';
 
 function Header() {
   const [showDropdown, setShowDropdown] = useState(false);
+  const { onOpen, isOpen, onClose } = useDisclosure();
+
+  const handleModalOpen = () => {
+    setShowDropdown(false);
+    onOpen();
+  };
   return (
     <Box as="header" background="spikk-inner-header-bg">
       <Flex
@@ -69,22 +80,22 @@ function Header() {
                       >
                         Don't have an account?
                       </Text>
-                      <Link to="auth/login">
-                        <Box
-                          height="36px"
-                          width="140px"
-                          backgroundColor="spikk-red"
-                          borderRadius="9999px"
-                          display="flex"
-                          alignItems="center"
-                          color="white"
-                          textTransform="uppercase"
-                          justifyContent="center"
-                          gap="2px"
-                        >
-                          Join spikk <FiArrowUpRight size="24px" />{' '}
-                        </Box>
-                      </Link>
+                      <Box
+                        onClick={handleModalOpen}
+                        cursor="pointer"
+                        height="36px"
+                        width="140px"
+                        backgroundColor="spikk-red"
+                        borderRadius="9999px"
+                        display="flex"
+                        alignItems="center"
+                        color="white"
+                        textTransform="uppercase"
+                        justifyContent="center"
+                        gap="2px"
+                      >
+                        Join spikk <FiArrowUpRight size="24px" />{' '}
+                      </Box>
                     </Box>
                   </Box>
                   <Divider />
@@ -96,23 +107,23 @@ function Header() {
                     >
                       Already have an account ?
                     </Text>
-                    <Link to="auth/login">
-                      <Box
-                        height="36px"
-                        width="140px"
-                        border="1px solid"
-                        borderColor="spikk-text1"
-                        borderRadius="9999px"
-                        display="flex"
-                        alignItems="center"
-                        color="spikk-text1"
-                        textTransform="uppercase"
-                        justifyContent="center"
-                        gap="2px"
-                      >
-                        LOG IN HERE
-                      </Box>
-                    </Link>
+                    <Box
+                      onClick={handleModalOpen}
+                      cursor="pointer"
+                      height="36px"
+                      width="140px"
+                      border="1px solid"
+                      borderColor="spikk-text1"
+                      borderRadius="9999px"
+                      display="flex"
+                      alignItems="center"
+                      color="spikk-text1"
+                      textTransform="uppercase"
+                      justifyContent="center"
+                      gap="2px"
+                    >
+                      LOG IN HERE
+                    </Box>
                   </Box>
                 </VStack>
               </Box>
@@ -164,7 +175,7 @@ function Header() {
                   </div>
                 </NavLink>
                 <NavLink
-                  to="/orders"
+                  to="/dashboard/orders"
                   className={({ isActive }) =>
                     isActive ? 'active' : 'inactive'
                   }
@@ -175,7 +186,7 @@ function Header() {
                   </div>
                 </NavLink>
                 <NavLink
-                  to="/alerts"
+                  to="/dashboard/alerts"
                   className={({ isActive }) =>
                     isActive ? 'active' : 'inactive'
                   }
@@ -186,7 +197,7 @@ function Header() {
                   </div>
                 </NavLink>
                 <NavLink
-                  to="/chat"
+                  to="/dashboard/chat"
                   className={({ isActive }) =>
                     isActive ? 'active' : 'inactive'
                   }
@@ -201,6 +212,7 @@ function Header() {
           </Flex>
         </>
       )}
+      <RegisterModal isOpen={isOpen} onClose={onClose} />
     </Box>
   );
 }

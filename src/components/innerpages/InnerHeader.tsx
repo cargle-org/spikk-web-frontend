@@ -169,7 +169,7 @@ function InnerHeader() {
                 </div>
               </NavLink>
               <NavLink
-                to="/orders"
+                to="/dashboard/orders"
                 className={({ isActive }) => (isActive ? 'active' : 'inactive')}
               >
                 <div className="header-link">
@@ -178,7 +178,7 @@ function InnerHeader() {
                 </div>
               </NavLink>
               <NavLink
-                to="/about"
+                to="/dashboard/alerts"
                 className={({ isActive }) => (isActive ? 'active' : 'inactive')}
               >
                 <div className="header-link">
@@ -187,7 +187,7 @@ function InnerHeader() {
                 </div>
               </NavLink>
               <NavLink
-                to="/about"
+                to="/dashboard/chat"
                 className={({ isActive }) => (isActive ? 'active' : 'inactive')}
               >
                 <div className="header-link">

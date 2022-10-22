@@ -2,11 +2,11 @@ import React from 'react';
 import { Route, Routes } from 'react-router';
 import NotFound from '../pages/404';
 import Layout from '../components/Layout';
-import DashboardRoutes from '../pages/Dashboard';
 import LandingRoutes from '../pages/Landing';
 import PrivateRoutes from './private.router';
 import PublicRoutes from './public.router';
 import OrderRoutes from '../pages/Order';
+import DashboardRoutes from '../pages/Dashboard';
 
 const IndexRouter = () => (
   <React.Suspense fallback={<div>loading</div>}>
