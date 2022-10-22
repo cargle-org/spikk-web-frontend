@@ -1,9 +1,5 @@
-import React from 'react'
+import React from 'react';
 
-const SelectLocations = () => {
-  return (
-    <div>SelectLocations</div>
-  )
-}
+const SelectLocations = () => <div>SelectLocations</div>;
 
-export default SelectLocations
+export default SelectLocations;
