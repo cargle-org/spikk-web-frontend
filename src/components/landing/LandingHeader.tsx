@@ -1,9 +1,8 @@
+/* eslint-disable global-require */
 import React, { useState } from 'react';
 import {
   Image,
   Box,
-  Button,
-  Spacer,
   Flex,
   VStack,
   Divider,
@@ -11,8 +10,7 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import { FiChevronDown, FiArrowUpRight } from 'react-icons/fi';
-import { FaBeer } from 'react-icons/fa';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import RegisterModal from '../../pages/Landing/RegisterModal';
 
 const LandingHeader = () => {

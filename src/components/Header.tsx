@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import {
   Image,
-  TabList,
-  Tabs,
-  Tab,
   Box,
   Flex,
   VStack,
@@ -13,7 +10,7 @@ import {
   useDisclosure,
 } from '@chakra-ui/react';
 import { FiChevronDown, FiArrowUpRight, FiBell } from 'react-icons/fi';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { VscHome } from 'react-icons/vsc';
 import { BsCart } from 'react-icons/bs';
 import { BiChat } from 'react-icons/bi';
