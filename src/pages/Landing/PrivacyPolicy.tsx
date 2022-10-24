@@ -69,11 +69,8 @@ const PrivacyPolicy = () => {
 
           </Box>
 
-          <Box>
-            <Image
-              maxH={"720px"}
-              src={require("../../assets/images/homepage/homepage-banner1.png")}
-            />
+          <Box marginBottom={"500px"}>
+          
           </Box>
         </Flex>
 
